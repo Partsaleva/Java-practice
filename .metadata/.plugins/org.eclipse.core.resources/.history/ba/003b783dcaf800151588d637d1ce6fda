@@ -1,0 +1,36 @@
+import java.util.Random;
+
+public class GuessTheNumber {
+
+	public static void main(String[] args) {
+		Random rand=new Random();
+		int num=rand.nextInt(1000);
+		System.out.println(num);
+		search(25,num);
+	}
+
+	public static int guess(int x, int num){
+		if (x==num) {
+			return 0;
+		} else if(x<num){
+			return -1;
+		}
+		else{
+			return 1;
+		}
+	}
+	
+	public static void search(int x, int num){
+		int left = 1, right = 1000;
+		while (left <= right) {
+		    int mid = (left + right) / 2;
+		    int res = guess(mid ,num);
+		    if (res == 0)
+		        System.out.println(mid);
+		    if (res < 0)
+		        right = mid - 1;
+		    else
+		        left = mid + 1;
+		}
+	}
+}
