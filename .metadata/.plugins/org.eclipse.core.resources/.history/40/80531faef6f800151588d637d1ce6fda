@@ -38,7 +38,7 @@ public class MaxSumSubArray {
 			if (max < currentMax) {
 				max=currentMax;
 				end=i;
-				
+				begin=0;
 			}
 			
 			// for tests

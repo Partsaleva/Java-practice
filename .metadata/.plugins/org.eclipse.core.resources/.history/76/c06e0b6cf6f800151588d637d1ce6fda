@@ -33,14 +33,13 @@ public class MaxSumSubArray {
 				begin+=1;
 			} else {
 				currentMax += arr[i];
+				begin-=1;
 			}
 
 			if (max < currentMax) {
 				max=currentMax;
 				end=i;
-				
 			}
-			
 			// for tests
 			//currentMax = Math.max(arr[i], currentMax + arr[i]);
 			//max = Math.max(max, currentMax);

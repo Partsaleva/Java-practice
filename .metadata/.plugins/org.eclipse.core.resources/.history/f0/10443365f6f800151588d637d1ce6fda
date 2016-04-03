@@ -38,9 +38,7 @@ public class MaxSumSubArray {
 			if (max < currentMax) {
 				max=currentMax;
 				end=i;
-				
 			}
-			
 			// for tests
 			//currentMax = Math.max(arr[i], currentMax + arr[i]);
 			//max = Math.max(max, currentMax);
