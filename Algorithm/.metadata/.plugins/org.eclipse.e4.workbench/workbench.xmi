@@ -3,7 +3,7 @@
   <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;workbench>&#xA;&lt;mruList>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.ide.FileStoreEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;MaxSumSubArray.java&quot; tooltip=&quot;/home/partsaleva/Projects/Java-practice/Algorithm/src/MaxSumSubArray.java&quot;>&#xA;&lt;persistable uri=&quot;file:/home/partsaleva/Projects/Java-practice/Algorithm/src/MaxSumSubArray.java&quot;/>&#xA;&lt;/file>&#xA;&lt;/mruList>&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <tags>ModelMigrationProcessor.001</tags>
-  <children xsi:type="basic:TrimmedWindow" xmi:id="_YfZZkvmbEeWehvfLWF7tKw" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_Y2zM8vmbEeWehvfLWF7tKw" label="%trimmedwindow.label.eclipseSDK" x="75" y="24" width="1018" height="720">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_YfZZkvmbEeWehvfLWF7tKw" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_Y2zM8vmbEeWehvfLWF7tKw" label="%trimmedwindow.label.eclipseSDK" x="75" y="24" width="1012" height="719">
     <persistedState key="coolBarVisible" value="true"/>
     <persistedState key="perspectiveBarVisible" value="true"/>
     <persistedState key="isRestored" value="true"/>
@@ -48,11 +48,12 @@
           <tags>persp.showIn:org.eclipse.ui.navigator.ProjectExplorer</tags>
           <tags>persp.viewSC:org.eclipse.pde.runtime.LogView</tags>
           <tags>persp.perspSC:org.eclipse.wst.xml.ui.perspective</tags>
-          <children xsi:type="basic:PartSashContainer" xmi:id="_ZIgA8fmbEeWehvfLWF7tKw" selectedElement="_ZIgA-_mbEeWehvfLWF7tKw" horizontal="true">
+          <children xsi:type="basic:PartSashContainer" xmi:id="_ZIgA8fmbEeWehvfLWF7tKw" selectedElement="_ZIgA8vmbEeWehvfLWF7tKw" horizontal="true">
             <children xsi:type="basic:PartSashContainer" xmi:id="_ZIgA8vmbEeWehvfLWF7tKw" containerData="2600" selectedElement="_ZIgA8_mbEeWehvfLWF7tKw">
               <children xsi:type="basic:PartStack" xmi:id="_ZIgA8_mbEeWehvfLWF7tKw" elementId="topLeft" containerData="5000" selectedElement="_ZIgA9PmbEeWehvfLWF7tKw">
                 <tags>org.eclipse.e4.primaryNavigationStack</tags>
                 <tags>noFocus</tags>
+                <tags>active</tags>
                 <children xsi:type="advanced:Placeholder" xmi:id="_ZIgA9PmbEeWehvfLWF7tKw" elementId="org.eclipse.ui.navigator.ProjectExplorer" ref="_ZIYFIPmbEeWehvfLWF7tKw"/>
                 <children xsi:type="advanced:Placeholder" xmi:id="_ZIgA9fmbEeWehvfLWF7tKw" elementId="org.eclipse.ui.views.BookmarkView" toBeRendered="false" ref="_ZIZ6UPmbEeWehvfLWF7tKw"/>
                 <children xsi:type="advanced:Placeholder" xmi:id="_ZIgA9vmbEeWehvfLWF7tKw" elementId="org.eclipse.ui.views.ResourceNavigator" toBeRendered="false" ref="_ZIZ6UfmbEeWehvfLWF7tKw"/>
@@ -108,15 +109,11 @@
       <children xsi:type="basic:PartStack" xmi:id="_ZIKCsfmbEeWehvfLWF7tKw" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_ipICoPmbEeW3aJY9cM3P1g">
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
-        <tags>active</tags>
-        <tags>noFocus</tags>
         <children xsi:type="basic:Part" xmi:id="_ipICoPmbEeW3aJY9cM3P1g" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="MaxSumSubArray.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
           <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;MaxSumSubArray.java&quot; partName=&quot;MaxSumSubArray.java&quot; title=&quot;MaxSumSubArray.java&quot; tooltip=&quot;/home/partsaleva/Projects/Java-practice/Algorithm/src/MaxSumSubArray.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.ide.FileStoreEditorInputFactory&quot; uri=&quot;file:/home/partsaleva/Projects/Java-practice/Algorithm/src/MaxSumSubArray.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;0&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
           <tags>removeOnHide</tags>
-          <tags>active</tags>
-          <tags>activeOnClose</tags>
         </children>
       </children>
     </sharedElements>
@@ -124,6 +121,8 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;view CommonNavigator.LINKING_ENABLED=&quot;0&quot; org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets=&quot;0&quot;/>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
+      <tags>active</tags>
+      <tags>activeOnClose</tags>
       <menus xmi:id="_ZKSJoPmbEeWehvfLWF7tKw" elementId="org.eclipse.ui.navigator.ProjectExplorer">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -177,7 +176,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_ZABaYPmbEeWehvfLWF7tKw" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_dEhKkPmbEeW3aJY9cM3P1g" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_YgLcyvmbEeWehvfLWF7tKw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_O4ohUPzVEeWqev9bSIQVbg" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_YgLcyvmbEeWehvfLWF7tKw"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_ZABaYfmbEeWehvfLWF7tKw" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -198,7 +197,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_ZACBcvmbEeWehvfLWF7tKw" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_dEmDEPmbEeW3aJY9cM3P1g" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_YgHybfmbEeWehvfLWF7tKw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_O4sywPzVEeWqev9bSIQVbg" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_YgHybfmbEeWehvfLWF7tKw"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_ZACogPmbEeWehvfLWF7tKw" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
