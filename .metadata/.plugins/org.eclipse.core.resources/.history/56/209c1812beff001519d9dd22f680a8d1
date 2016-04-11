@@ -10,7 +10,6 @@ public class CheckRepeating {
 		System.out.println(checkForRepeatedNumber(arr1));
 		System.out.println(checkForRepeatedNumber(arr2));
 		System.out.println(checkForRepeatedNumber(arr3));
-		
 	}
 
 	public static boolean checkForRepeatedNumber(int [] arr){
@@ -20,5 +19,4 @@ public class CheckRepeating {
 		}
 		return arr.length == set.size();
 	}
-	
 }
