@@ -1,0 +1,16 @@
+package oop;
+
+public class Child extends Parrent{
+
+	public static void main(String[] args) {
+		Child p=new Child(3);
+
+	}
+
+	int a;
+	public Child(int a){
+		super(a);
+		this.a=a;
+		System.out.println("child"+a);
+	}
+}

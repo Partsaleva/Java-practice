@@ -11,4 +11,6 @@
 <fullyQualifiedTypeName name="java.lang.Runnable"/>
 <fullyQualifiedTypeName name="threads.ExerciseOne"/>
 <fullyQualifiedTypeName name="java.lang.Thread"/>
+<fullyQualifiedTypeName name="oop.Child"/>
+<fullyQualifiedTypeName name="oop.Parrent"/>
 </qualifiedTypeNameHistroy>
