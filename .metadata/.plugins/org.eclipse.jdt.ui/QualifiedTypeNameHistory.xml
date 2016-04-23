@@ -3,7 +3,6 @@
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.util.LinkedList"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
-<fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="GuessTheNumber"/>
 <fullyQualifiedTypeName name="java.util.Set"/>
@@ -13,4 +12,8 @@
 <fullyQualifiedTypeName name="java.lang.Thread"/>
 <fullyQualifiedTypeName name="oop.Child"/>
 <fullyQualifiedTypeName name="oop.Parrent"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="task1and2.Coord"/>
+<fullyQualifiedTypeName name="task1and2.Triangle"/>
 </qualifiedTypeNameHistroy>

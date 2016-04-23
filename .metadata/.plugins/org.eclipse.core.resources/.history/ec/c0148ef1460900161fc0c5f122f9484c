@@ -1,0 +1,22 @@
+package task1and2;
+
+public class TriangleArea {
+
+	public static void main(String[] args) {
+		Triangle triangle=new Triangle(new Coord(-5, 10), new Coord(25, 30), new Coord(60, 15));
+		System.out.println("Triangle Area :"+ calculateTriangleArea(triangle));
+	}
+
+	
+	
+	private static double calculateTriangleArea(Triangle tr){
+					//Ax* (By - Cy) +
+		double area=(tr.getA().getX()* (tr.getB().getY() - tr.getC().getY() )+
+					//Bx(Cy-Ay) +
+					tr.getB().getX()* (tr.getC().getY() - tr.getA().getY() )+
+					//Cx(Ay-By)
+					tr.getC().getX()* (tr.getA().getY() - tr.getB().getY() )
+				);
+		return 0;
+	}
+}

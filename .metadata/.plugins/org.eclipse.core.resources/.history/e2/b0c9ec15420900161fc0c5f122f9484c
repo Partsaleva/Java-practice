@@ -1,0 +1,17 @@
+package task1and2;
+
+import java.util.Scanner;
+
+public class RectangleArea {
+
+	public static void main(String[] args) {
+		Scanner scanner=new Scanner(System.in);
+		double a=scanner.nextDouble();
+		double b=scanner.nextDouble();		
+		scanner.close();
+		double result=a * b;
+		System.out.println("Rectangle Area is: "+result);
+
+	}
+
+}

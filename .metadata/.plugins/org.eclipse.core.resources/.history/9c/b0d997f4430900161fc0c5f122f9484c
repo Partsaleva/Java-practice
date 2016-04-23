@@ -1,0 +1,31 @@
+package task1and2;
+
+import java.util.Scanner;
+
+public class RectangleArea {
+
+	public static void main(String[] args) {
+		calculateArea();
+
+	}
+
+	public static void calculateArea(){
+		Scanner scanner=new Scanner(System.in);
+		double a;
+		double b;	
+		do {
+	        System.out.println("Please enter a positive number!");
+	        while (!scanner.hasNextDouble()) {
+	            System.out.println("That's not a number!");
+	            scanner.next();
+	        }
+	        a = scanner.nextDouble();
+	        b=scanner.nextDouble();
+	    } while (a <= 0 || b<= 0);
+		scanner.close();
+		
+		double result=a * b;
+		
+		System.out.println("Rectangle Area is: "+result);
+	}
+}
