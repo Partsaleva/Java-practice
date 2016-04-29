@@ -1,0 +1,33 @@
+package task3and4;
+
+public class CalculateExpression {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+	private static double resultOfFirstFormula(int a, int b, int c){
+		int aSqrt = a * a;
+		int bSqrt = b * b;
+		double mainExpr = (aSqrt+bSqrt)/(aSqrt-bSqrt);
+		double powExpr=(a+b+c)/Math.sqrt(c);
+		return Math.pow(mainExpr, powExpr);
+	}
+	
+	
+	private static double resultOfSecondFormula(int a, int b, int c){
+		int cCub=c*c*c;
+		double mainExpr=a*a + b*b - cCub;
+		double powExpr=a-b;
+		return Math.pow(mainExpr, powExpr);
+	}
+	
+	private static double averageOfNumbers(int a, int b, int c){
+		return (a+b+c)/3;
+	}
+	
+	private static double averageOfFormulas(int a, int b, int c){
+		return (resultOfFirstFormula(a, b, c) + resultOfSecondFormula(a, b, c)) / 2;
+	}
+}
