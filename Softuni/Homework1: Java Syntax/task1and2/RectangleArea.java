@@ -1,5 +1,6 @@
 package task1and2;
 
+
 import java.util.Scanner;
 
 public class RectangleArea {

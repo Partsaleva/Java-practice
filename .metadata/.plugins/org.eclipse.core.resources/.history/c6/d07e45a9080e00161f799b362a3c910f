@@ -1,0 +1,24 @@
+package task3and4;
+
+import java.util.Scanner;
+
+public class FormattingNumbers {
+
+	public static void main(String[] args) {
+		/*
+		Scanner scanner=new Scanner(System.in);
+		int a=scanner.nextInt();
+		double b=scanner.nextDouble();
+		double c=scanner.nextDouble();
+		formatNumbers(a, b, c);
+		*/
+		formatNumbers(3, 4, 5);
+
+	}
+
+	public static void formatNumbers(int a, double b, double c){
+		String hexA=Integer.toHexString(a);
+		String binaryA=Integer.toBinaryString(a);
+		System.out.print(String.format("|%-10s|%01ds|%10.2f|%-10.3f|", hexA,a, b, c));
+	}
+}
