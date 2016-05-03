@@ -1,0 +1,24 @@
+package task5and6;
+
+public class ConvertToDecimal {
+
+	public static void main(String[] args) {
+		int num=2626; int base=7;
+		System.out.println(convertToDecimal(num, base));
+
+	}
+
+	private static int convertToDecimal(int number, int base){
+		StringBuilder num=new StringBuilder(number);
+		num.reverse();
+		System.out.println(num.toString());
+		int result=0;
+		for (int i = 1; i <= num.length(); i++) {
+			double p=Math.pow(base, i);
+			result+=num.charAt(i-1) * p;
+		}
+			
+		return result;
+		
+	}
+}
