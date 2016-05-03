@@ -1,0 +1,19 @@
+package task5and6;
+
+public class FromDecimalToBase {
+
+	public static void main(String[] args) {
+		int number=1;
+		int base=7;
+		System.out.println(FromDecimalToBase(number,base));
+	}
+
+	private static int FromDecimalToBase(int number, int base){
+		String result="";
+		if (number<base) {
+			System.out.println(number);
+		}
+		
+		return Integer.parseInt(result);
+	}
+}

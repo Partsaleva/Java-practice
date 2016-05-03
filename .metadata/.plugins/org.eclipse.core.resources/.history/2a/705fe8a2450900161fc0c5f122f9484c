@@ -1,8 +1,0 @@
-package task1and2;
-
-public class Triangle {
-
-	private Coord a;
-	private Coord b;
-	private Coord c;
-}

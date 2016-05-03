@@ -1,0 +1,22 @@
+package task5and6;
+
+public class FromDecimalToBase {
+
+	public static void main(String[] args) {
+		int number=123;
+		int base=7;
+		FromDecimalToBase(number,base);
+	}
+
+	private static void FromDecimalToBase(int number, final int base){
+		if (number<base) {
+			System.out.println(number);
+		}
+		else{
+			int result=(number/base)+ number%base;
+			System.out.println(result);
+		}
+		
+		//return Integer.parseInt(result);
+	}
+}

@@ -1,0 +1,25 @@
+package task5and6;
+
+public class FromDecimalToBase {
+
+	public static void main(String[] args) {
+		int number=1000;
+		int base=7;
+		System.out.println(FromDecimalToBase(number,base));
+	}
+
+	private static int FromDecimalToBase(int number, int base){
+		String result="";
+		int h=0;
+		while(number/base != 0){
+			number=number%base;
+			h=number/base;
+			while(h>base){
+				base*=base;
+			}
+			result+=h;
+		}
+		
+		return Integer.parseInt(result);
+	}
+}
