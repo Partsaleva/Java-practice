@@ -1,0 +1,15 @@
+package task7and8;
+
+import java.util.Random;
+
+public class RandomizeNumbers {
+
+	public static void main(String[] args) {
+		Random rand=new Random();
+		int low = 10;
+		int high = 21;
+		System.out.println(rand.nextInt(high-low) + low);
+
+	}
+
+}

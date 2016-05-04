@@ -1,6 +1,6 @@
-package task5and6;
+package task7and8;
 
-public class FromDecimalToBase {
+public class RandomizeNumbers {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
