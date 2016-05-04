@@ -1,0 +1,10 @@
+package task7and8;
+
+public class OddAndEvenPairs {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
