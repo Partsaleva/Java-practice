@@ -1,0 +1,23 @@
+package task910and11;
+
+public class CharacterMultiplier {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public static int getCodeOfStrings(String first, String second){
+		
+		return 0;
+		
+	}
+	
+	private static String bigger(String a, String b){
+		return (a.length() > b.length()) ? a : b;
+	}
+	
+	private static String smaller(String a, String b){
+		return (a.length() < b.length()) ? a : b;
+	}
+}
