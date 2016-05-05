@@ -5,10 +5,9 @@ public class CharacterMultiplier {
 	public static void main(String[] args) {
 		int sum=getCodeOfStrings("Gosho", "Pesho");
 		int sum2=getCodeOfStrings("123", "522");
-		int sum3=getCodeOfStrings("a", "aaaa");
+		
 		System.out.println(sum);
 		System.out.println(sum2);
-		System.out.println(sum3);
 
 	}
 
