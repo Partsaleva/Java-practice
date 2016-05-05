@@ -15,14 +15,12 @@ public class CharacterMultiplier {
 		String bigger=bigger(first, second);
 		String smaller=smaller(first, second);
 		int sum=0;
-		
 		for (int i = 0; i < smaller.length(); i++) {
 			sum+=( bigger.charAt(i) * smaller.charAt(i));
 		}
 		for (int i = smaller.length(); i < bigger.length(); i++) {
 			sum+=bigger.charAt(i);
 		}
-		
 		return sum;		
 	}
 	
