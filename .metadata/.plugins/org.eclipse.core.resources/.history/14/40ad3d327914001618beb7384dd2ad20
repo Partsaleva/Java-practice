@@ -25,16 +25,13 @@ public class AllCapitals {
 
 	
 	public static void readFile(String file){
-		List<String> lineArray = new ArrayList<>();	
-		
+		List<String> lineArray = new ArrayList<>();		
 		try(BufferedReader br= new BufferedReader(new FileReader(file))){
 			String line=null;
 			while((line=br.readLine())!=null){
 				lineArray.add(line.toUpperCase());
-			}
-			
+			}			
 			changeToCapitals(file, lineArray);
-			
 		} catch (FileNotFoundException e) {
 			System.err.println(e);
 		} catch (IOException e) {
