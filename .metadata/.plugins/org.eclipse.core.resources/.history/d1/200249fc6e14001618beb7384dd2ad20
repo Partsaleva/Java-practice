@@ -1,0 +1,45 @@
+package tasks1to4;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+
+//Problem 2. ALL CAPITALS!
+//Write a program that reads a text file and changes the casing 
+//of all letters to upper. The file should be overwritten. Use BufferedReader,
+//FileReader, FileWriter, and PrintWriter.
+public class AllCapitals {
+
+	public static void main(String[] args) {
+		readFile("lines1.txt");
+
+	}
+
+	
+	public static void readFile(String file){
+		try(BufferedReader br= new BufferedReader(new FileReader(file))){
+			String line=null;
+			while((line=br.readLine())!=null){
+				changeToCapitals(file, line);
+			}
+		} catch (FileNotFoundException e) {
+			System.err.println(e);
+		} catch (IOException e) {
+			System.err.println(e);
+		}
+	}
+	
+	public static void changeToCapitals(String file, String line){
+		try(FileWriter writer=new FileWriter(file)){
+			
+			PrintWriter printWriter = new PrintWriter(writer,true);
+			printWriter.println(line.toUpperCase());
+			
+		} catch (IOException e) {
+			System.err.println(e);
+		}
+	}
+}
