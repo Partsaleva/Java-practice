@@ -1,0 +1,27 @@
+package tasks1to4;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+
+//Problem 3. Count character types.
+//Write a program that reads a list of words from the file words.txt and
+//finds the count of vowels (гласни букви), consonants (съгласни) and
+//other punctuation marks. Since English is a bit tricky,
+//assume that a, e, i, o, u are vowels and all others are consonants. 
+//Punctuation marks are (!,.?). Do not count whitespace.
+public class CountCharacterTypes {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public static void createFile(){
+		try(BufferedWriter br=new BufferedWriter(new FileWriter("words.txt"))){
+			br.write("Thanks to us, you owe it to the Chinese.");
+		} catch (IOException e) {
+			System.err.println(e);
+		}
+	}
+}
