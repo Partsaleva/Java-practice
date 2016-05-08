@@ -1,0 +1,24 @@
+
+public class TestChangeObject {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+	private int a;
+	private int b;
+	
+	
+	public TestChangeObject(int a, int b) {
+		this.a = a;
+		this.b = b;
+	}
+	public int getA() {
+		return a;
+	}
+	public int getB() {
+		return b;
+	}
+	
+}
