@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;taskk5and6&apos; to &apos;task5to8&apos;&#x0A;- Original project: &apos;Softuni&apos;&#x0A;- Original element: &apos;Softuni/Homework2: Java Streams/taskk5and6&apos;&#x0A;- Renamed element: &apos;Softuni/Homework2: Java Streams/task5to8&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;taskk5and6&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/Homework2: Java Streams&lt;taskk5and6" name="task5to8" qualified="false" references="true" stamp="1462712054923" textual="false" version="1.0"/>
+</session>
