@@ -1,6 +1,5 @@
 package task3and4;
 
-import java.util.Scanner;
 
 public class FormattingNumbers {
 

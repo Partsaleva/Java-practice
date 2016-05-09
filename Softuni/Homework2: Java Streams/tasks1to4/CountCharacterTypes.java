@@ -7,9 +7,6 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
 //Problem 3. Count character types.
 //Write a program that reads a list of words from the file words.txt and
 //finds the count of vowels (гласни букви), consonants (съгласни) and
