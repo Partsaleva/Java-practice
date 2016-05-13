@@ -1,0 +1,52 @@
+package tasks5to8.csvDatabase;
+
+import java.util.List;
+
+public class CSVDatabase {
+
+	public static void main(String[] args) {
+		CSVDatabase db=new CSVDatabase();
+		db.searchByFullname("Mariana Ivanova");
+		//db.searchById(6);
+	}
+
+	;
+	
+	public CSVDatabase() {	
+		//FileRead f=new FileRead();
+		//this.students = f.readStudentsFile();
+		//this.grades = f.readGradesFile();
+	}
+	
+	public void searchByFullname(String fullName){
+		FileRead f=new FileRead();
+		List<Student> students=f.readStudentsFile();
+		List<Grades> grades= f.readGradesFile();
+		String[] names=fullName.split(" ");
+		for (Student s : students) {
+			if(s.getFirstName().equals(names[0]) && 
+					s.getLastName().equals(names[1])){
+				searchById(s.getId());
+			}
+		}
+		
+	}
+	
+	public void searchById(int id){
+		FileRead f=new FileRead();
+		List<Student> students=f.readStudentsFile();
+		List<Grades> grades= f.readGradesFile();
+		for (Student s : students) {
+			if(s.getId()==id){
+				System.out.println(s);
+			}
+		}
+		for (Grades g : grades) {
+			if(g.getId()==id){
+				System.out.format("# %s\n # %s\n", g.getMathGrades(), g.getLiterGrades());
+			}
+		}
+		
+	}
+	
+} 

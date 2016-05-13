@@ -1,0 +1,54 @@
+package tasks5to8.csvDatabase;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class CSVDatabase {
+
+	public static void main(String[] args) {
+		CSVDatabase db=new CSVDatabase();
+		db.searchByFullname("Mariana Ivanova");
+		db.searchById(6);
+		db.searchById(17);
+	}
+
+	List<Student> students=new ArrayList<>();
+	List<Grades> grades= new ArrayList<>();
+	
+	public CSVDatabase() {	
+		FileRead f=new FileRead();
+		this.students = f.readStudentsFile();
+		this.grades = f.readGradesFile();
+	}
+	
+	public void searchByFullname(String fullName){
+		String[] names=fullName.split(" ");
+		for (Student s : students) {
+			if(s.getFirstName().equals(names[0]) && 
+					s.getLastName().equals(names[1])){
+				searchById(s.getId());
+			}
+		}
+		
+	}
+	
+	public void searchById(int id){
+		boolean found=false;
+		for (Student s : students) {
+			if(s.getId()==id){
+				found=true;
+				System.out.println(s);
+			}
+		}
+		for (Grades g : grades) {
+			if(g.getId()==id){
+				System.out.format("# %s\n# %s\n", g.getMathGrades(), g.getLiterGrades());
+			}
+		}
+		if (!found) {
+			System.out.println("Student does not exist");
+		}
+	}
+	
+	
+} 

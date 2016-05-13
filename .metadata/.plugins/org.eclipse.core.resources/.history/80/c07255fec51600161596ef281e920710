@@ -1,0 +1,25 @@
+package tasks5to8.csvDatabase;
+
+import java.util.List;
+
+public class CSVDatabase {
+
+	public static void main(String[] args) {
+		
+	}
+
+	List<Student> students;
+	List<Grades> grades;
+	
+	public CSVDatabase() {	
+		FileRead f=new FileRead();
+		this.students = f.readStudentsFile();
+		this.grades = f.readGradesFile();
+	}
+	
+	public void searchByFullname(String fullName){
+		String[] names=fullName.split(" ");
+		
+	}
+	
+} 

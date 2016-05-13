@@ -1,0 +1,17 @@
+package tasks5to8.csvDatabase;
+
+public class Grades {
+
+	private int id;
+	private String mathGrades;
+	private String literGrades;
+	
+	public Grades(int id, String mathGrades, String literGrades) {
+		super();
+		this.id = id;
+		this.mathGrades = mathGrades;
+		this.literGrades = literGrades;
+	}
+	
+	
+}

@@ -1,0 +1,92 @@
+package tasks5to8.csvDatabase;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+public class CSVDatabase {
+
+	public static void main(String[] args) {
+		CSVDatabase db=new CSVDatabase();
+		List<Student> s=db.readStudentsFile();
+		//List<Grades> g=db.readGradesFile();
+		System.out.println(db.readStudentsFile());
+	//	System.out.println(g);
+	}
+
+	List<Student> students;
+	List<Grades> grades;
+	
+	public CSVDatabase() {		}
+		
+	
+	/*
+	public void searchByFullname(String fullName){
+		String[] names=fullName.split(" ");
+		for (Student s : students) {
+			if(s.getFirstName().equals(names[0]) && 
+					s.getLastName().equals(names[1])){
+				searchById(s.getId());
+			}
+		}
+		
+	}*/
+	/*
+	public void searchById(int id){
+		for (Student s : students) {
+			if(s.getId()==id){
+				System.out.println(s);
+			}
+		}
+		for (Grades g : grades) {
+			if(g.getId()==id){
+				System.out.format("# %s\n # %s\n", g.getMathGrades(), g.getLiterGrades());
+			}
+		}
+		
+	}
+	*/
+	
+	public List<Student> readStudentsFile(){
+		List<Student> students=new ArrayList<>();
+		try(BufferedReader reader=new BufferedReader(
+				new FileReader("students.txt"))){
+			String line=null;
+			while((line=reader.readLine())!=null){
+				String[] words=line.split(",");
+				Student s=new Student(Integer.parseInt(words[0]), words[1], 
+						words[2], Integer.parseInt(words[3]), words[4]);
+				students.add(s);
+			}
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return students;
+		
+	}
+	
+	
+	public List<Grades> readGradesFile(){
+		List<Grades> grades=new ArrayList<>();
+		try(BufferedReader reader=new BufferedReader(
+				new FileReader("grades.txt"))){
+			String line=null;
+			while((line=reader.readLine())!=null){
+				String[] words=line.split(",");
+				Grades g=new Grades(Integer.parseInt(words[0]), words[1], words[2]);
+				grades.add(g);
+			}
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return grades;
+		
+	}
+} 

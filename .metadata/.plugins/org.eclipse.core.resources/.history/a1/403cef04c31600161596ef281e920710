@@ -1,0 +1,23 @@
+package tasks5to8.csvDatabase;
+
+import java.io.BufferedInputStream;
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.List;
+
+public class FileRead {
+
+	public List<Student> readStudentsFile(){
+		try(BufferedReader reader=new BufferedReader(new FileReader("students.txt"))){
+			
+		}
+		return null;
+		
+	}
+	public List<Student> readGradesFile(){
+		return null;
+		
+	}
+}

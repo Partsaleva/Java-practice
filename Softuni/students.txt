@@ -1,0 +1,3 @@
+6,Mariana,Ivanova,20,Bourgas
+7,Maria,Ivanova,21,Varna
+8,Ivan,Pavlov,19,Sofia
