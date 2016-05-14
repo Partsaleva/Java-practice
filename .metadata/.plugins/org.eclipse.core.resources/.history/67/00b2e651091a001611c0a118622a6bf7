@@ -8,16 +8,16 @@ import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 import java.util.TreeMap;
-//not so good solutions
+
 public class CSVDatabase {
 
 	public static void main(String[] args) {
 		CSVDatabase db=new CSVDatabase();
-		db.searchByFullname("Mariana Ivanova");
-		db.searchById(6);
-		db.searchById(17);
-		db.deleteById(5);
-		db.insertStudent("Georgi Mamarchev 19 Sofia");
+		//db.searchByFullname("Mariana Ivanova");
+		//db.searchById(6);
+		//db.searchById(17);
+		//db.deleteById(5);
+		//db.insertStudent("Georgi Mamarchev 19 Sofia");
 		db.insertGradesById(6);
 	}
 
@@ -101,17 +101,17 @@ public class CSVDatabase {
 		Scanner scanner=new Scanner(System.in);
 		System.out.println("Math Grades: "+ math);
 		System.out.print("Add grade: "); 
-		math+=" "+scanner.nextLine();
+		math=" "+scanner.nextLine();
 		
 		System.out.println("Literature Grades: "+ math);
 		System.out.print("Add grade: "); 
-		liter+=" "+scanner.nextLine();
+		liter=" "+scanner.nextLine();
 		scanner.close();
 		Grades newGrade=new Grades(id, math, liter);
 		grades.remove(neededGrades);
 		grades.add(newGrade);
 		
-		try (BufferedWriter out = new BufferedWriter(new FileWriter("grades.txt"))) {
+		try (BufferedWriter out = new BufferedWriter(new FileWriter("students.txt"))) {
 			for (Grades g: grades) {
 				out.write(g.getId()+","+g.getMathGrades()+","+g.getLiterGrades());
 				out.write(System.getProperty("line.separator"));

@@ -7,6 +7,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
@@ -53,8 +54,8 @@ public class FileRead {
 		
 	}
 
-	public TreeMap<Integer, String> studentsFileInTreeMap(){
-		TreeMap<Integer, String> studentsMap=new TreeMap<>();
+	public Map<Integer,String> studentsFileInTreeMap(){
+		Map<Integer, String> studentsMap=new TreeMap<>();
 		try(BufferedReader reader=new BufferedReader(
 				new FileReader("students.txt"))){
 			String line=null;
@@ -71,8 +72,8 @@ public class FileRead {
 		return studentsMap;
 	}
 	
-	public TreeMap<Integer,String> gradesFileInTreeMap(){
-		TreeMap<Integer, String> gradesMap=new TreeMap<>();
+	public Map<Integer,String> gradesFileInTreeMap(){
+		Map<Integer, String> gradesMap=new TreeMap<>();
 		try(BufferedReader reader=new BufferedReader(
 				new FileReader("grades.txt"))){
 			String line=null;
@@ -101,6 +102,5 @@ public class FileRead {
 		}
 
 	}
-	
 	
 }
