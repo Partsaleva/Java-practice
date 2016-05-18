@@ -19,7 +19,6 @@
 <fullyQualifiedTypeName name="java.util.regex.Matcher"/>
 <fullyQualifiedTypeName name="TestChangeObject"/>
 <fullyQualifiedTypeName name="task5to8.ArrayListOfDoubles"/>
-<fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="java.io.OutputStream"/>
 <fullyQualifiedTypeName name="java.io.Serializable"/>
 <fullyQualifiedTypeName name="tasks5to8.task6.Course"/>
@@ -29,7 +28,6 @@
 <fullyQualifiedTypeName name="java.util.zip.ZipOutputStream"/>
 <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
 <fullyQualifiedTypeName name="java.util.zip.ZipEntry"/>
-<fullyQualifiedTypeName name="java.io.File"/>
 <fullyQualifiedTypeName name="java.io.FileInputStream"/>
 <fullyQualifiedTypeName name="java.io.BufferedInputStream"/>
 <fullyQualifiedTypeName name="java.io.FileReader"/>
@@ -41,8 +39,6 @@
 <fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="tasks5to8.csvDatabase.Student"/>
 <fullyQualifiedTypeName name="java.util.HashMap"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.util.concurrent.CopyOnWriteArrayList"/>
 <fullyQualifiedTypeName name="javax.swing.text.html.HTMLDocument.Iterator"/>
 <fullyQualifiedTypeName name="java.util.Iterator"/>
@@ -51,11 +47,16 @@
 <fullyQualifiedTypeName name="tasks5to8.csvDatabase.FileRead"/>
 <fullyQualifiedTypeName name="java.util.Map.Entry"/>
 <fullyQualifiedTypeName name="java.util.TreeMap"/>
-<fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="tasks5to8.csvDatabase.Grades"/>
 <fullyQualifiedTypeName name="java.io.BufferedReader"/>
 <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
 <fullyQualifiedTypeName name="java.io.IOException"/>
 <fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="RandomGenerator"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="java.awt.Desktop"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
 </qualifiedTypeNameHistroy>
