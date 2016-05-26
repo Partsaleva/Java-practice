@@ -1,0 +1,31 @@
+package sorting;
+
+import java.util.List;
+
+public class CountingSort {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void countSort( List<Integer> list, int n) {
+		int[] cnt=new int[list.size()];
+
+	/* 0. Инициализиране на множеството */
+	for (int i = 0; i < list.size(); i++){
+		cnt[i] = 0;
+	}
+	
+	/* 1. Формиране на множеството */
+	for (int j = 0; j < n; j++) {
+		cnt[list.get(j)]++;	
+	}
+	/* 2. Генериране на сортирана последователност */
+	for (i = j = 0; i < MAX_VALUE; i++)Глава 3 - Сортиране
+	224
+	while (cnt[i]--)
+	m[j++] = i;
+	assert(j == n);
+	}
+}

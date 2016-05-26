@@ -1,0 +1,34 @@
+package sorting;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class CountingSort {
+
+	public static void main(String[] args) {
+		List<Integer> list=Arrays.asList(3,50,4,8,1,14,25,52,13);
+		System.out.println(countSort(list));
+
+	}
+
+	public static List<Integer> countSort( List<Integer> list) {
+		int[] cnt=new int[list.size()];
+		List<Integer> sortedList=new ArrayList<>();
+
+		for (int i = 0; i < cnt.length; i++){
+			cnt[i] = 0;
+		}
+		
+		for (int j = 0; j < list.size(); j++) {
+			cnt[list.get(j)]++;	
+		}
+	
+		    
+		for (Integer i : list) {
+			sortedList.set(cnt[list.get(i)], i);
+		}
+
+		return sortedList;
+	}
+}

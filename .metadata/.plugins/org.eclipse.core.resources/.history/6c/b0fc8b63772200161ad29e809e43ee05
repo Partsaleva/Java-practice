@@ -1,0 +1,38 @@
+package threads.pi;
+
+public class MyThread extends Thread {
+	double sum=0;
+	
+	public MyThread(String nameThread, long k, int numThread, boolean quit) {
+		
+	}
+
+	public void run() {
+		if (!quit) {
+			System.out.println(nameThread + " is starting! "+ "Points "+ " !");
+		}
+
+		if (!quit) {
+			System.out.println(nameThread + " is finishing! " + " !");
+		}
+	}
+
+	public static int fact(int n) {
+        int fact = 1; 
+        for (int i = 1; i <= n; i++) {
+            fact *= i;
+        }
+        return fact;
+    }
+
+	public static double ramanujanSeries(long n) {
+		
+		for(int k = 0; k < n; k++){
+			sum += ((fact(4 * k)) * (1103 + (26390 * k))) / 
+					(Math.pow(fact(k), 4) * Math.pow(396, (4 * k)));	
+		}
+		return 1 / (((2 * Math.sqrt(2)) / 9801) * sum);
+	}
+
+	
+}

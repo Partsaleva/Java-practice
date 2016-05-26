@@ -1,0 +1,48 @@
+package threads.pi;
+
+import java.util.concurrent.Callable;
+
+public class MyThread implements Callable<Double> {
+	private String nameThread;
+	private int k;
+	private int end;
+	
+	
+
+	
+
+	public MyThread(String nameThread, int k, int end) {
+		this.nameThread = nameThread;
+		this.k = k;
+		this.end = end;
+	}
+
+	public void run() {
+		
+	}
+
+	public int fact(int n) {
+        int fact = 1; 
+        for (int i = 1; i <= n; i++) {
+            fact *= i;
+        }
+        return fact;
+    }
+
+	public double ramanujanSeries() {
+		double sum = 0;
+		for(int k = 0; k < end; k++){
+			sum += ((fact(4 * k)) * (1103 + (26390 * k))) / 
+					(Math.pow(fact(k), 4) * Math.pow(396, (4 * k)));	
+		}
+		return 1 / (((2 * Math.sqrt(2)) / 9801) * sum);
+	}
+
+	@Override
+	public Double call() throws Exception {
+		return ramanujanSeries();
+	}
+	
+
+	
+}

@@ -1,0 +1,32 @@
+package threads.pi;
+
+public class MyThread extends Thread {
+	private double sum;
+	private int k;
+	
+	
+
+	public MyThread(double sum, int k) {
+		this.sum = sum;
+		this.k = k;
+	}
+
+	public void run() {
+		ramanujanSeries();
+	}
+
+	public static int fact(int n) {
+        int fact = 1; 
+        for (int i = 1; i <= n; i++) {
+            fact *= i;
+        }
+        return fact;
+    }
+
+	public double ramanujanSeries() {		
+		return sum += ((fact(4 * k)) * (1103 + (26390 * k))) / 
+					(Math.pow(fact(k), 4) * Math.pow(396, (4 * k)));			
+	}
+
+	//return 1 / (((2 * Math.sqrt(2)) / 9801) * sum);
+}
