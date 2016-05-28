@@ -67,9 +67,9 @@ public class CP  {
 	        
 	        //get time 
 	        long time=System.nanoTime() - start;
-	       
-			printInfo(numberOfThreads, time);
-			
+	        if (!quiet) {
+				printInfo(numberOfThreads, time);
+			}
 	        //shut down the executor service now
 	        executor.shutdown();
 	    }
