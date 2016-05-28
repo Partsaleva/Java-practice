@@ -40,12 +40,10 @@ public class PartSum implements Callable<Double>{
 	private Double infoMethod(){
 		System.out.println(Thread.currentThread().getName() + " started");
 		long start = System.nanoTime();
-		
 		double sum=(fact(4*k)*(1103+(26390*k)))/
 				((Math.pow(fact(k), 4))*Math.pow(396, (4*k)));
 
 		long time=System.nanoTime() - start;
-		
 	    System.out.println(Thread.currentThread().getName() + " stopped");
 	    System.out.println(Thread.currentThread().getName() + 
 	    		" execution time was (millis): "+ time);;

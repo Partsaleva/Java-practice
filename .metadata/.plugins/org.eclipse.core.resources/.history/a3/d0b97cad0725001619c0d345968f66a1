@@ -45,7 +45,6 @@ public class PartSum implements Callable<Double>{
 				((Math.pow(fact(k), 4))*Math.pow(396, (4*k)));
 
 		long time=System.nanoTime() - start;
-		
 	    System.out.println(Thread.currentThread().getName() + " stopped");
 	    System.out.println(Thread.currentThread().getName() + 
 	    		" execution time was (millis): "+ time);;
