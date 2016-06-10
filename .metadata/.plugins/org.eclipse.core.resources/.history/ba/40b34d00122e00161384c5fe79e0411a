@@ -1,0 +1,12 @@
+package other;
+
+public class Test {
+
+	public static void main(String[] args) {
+		float f=2.3f;
+		double d=2.7;
+		int i=(int)Math.ceil(f)*(int)Math.round(d);
+System.out.println(i);
+	}
+
+}

@@ -1,8 +1,10 @@
 package threads.pi;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.concurrent.Callable;
 
-public class PartSum implements Callable<Double>{
+public class PartSum implements Callable<BigDecimal>{
 
 	private int k;
 	private boolean quiet;
@@ -21,7 +23,7 @@ public class PartSum implements Callable<Double>{
         return fact;
     }
 	@Override
-	public Double call() throws Exception {
+	public BigDecimal call() throws Exception {
 		if(quiet){
 			return quietMethod();
 		}
@@ -31,19 +33,19 @@ public class PartSum implements Callable<Double>{
 	}
 	
 
-	private Double quietMethod() {
-		return (fact(4*k)*(1103+(26390*k)))/
-				((Math.pow(fact(k), 4))*Math.pow(396, (4*k)));
+	private BigDecimal quietMethod() {
+		return new BigDecimal((fact(4*k)*(1103+(26390*k))))
+				.divide(new BigDecimal(Math.pow(fact(k), 4)).multiply(new BigDecimal(Math.pow(396, (4*k)))),RoundingMode.HALF_UP);
 	}
 
 
-	private Double infoMethod(){
+	private BigDecimal infoMethod(){
 		System.out.println(Thread.currentThread().getName() + " started");
 		long start = System.nanoTime();
 		
-		double sum=(fact(4*k)*(1103+(26390*k)))/
-				((Math.pow(fact(k), 4))*Math.pow(396, (4*k)));
-
+		BigDecimal sum=new BigDecimal((fact(4*k)*(1103+(26390*k))))
+				.divide(new BigDecimal(Math.pow(fact(k), 4)).multiply(new BigDecimal(Math.pow(396, (4*k)))));
+			
 		long time=System.nanoTime() - start;
 		
 	    System.out.println(Thread.currentThread().getName() + " stopped");

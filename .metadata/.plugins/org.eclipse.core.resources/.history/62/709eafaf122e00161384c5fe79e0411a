@@ -1,0 +1,11 @@
+package other;
+
+public class Test {
+
+	public static void main(String[] args) {
+		int i=64;
+		Integer s=64;
+		System.out.println(s.equals(i));
+	}
+
+}
