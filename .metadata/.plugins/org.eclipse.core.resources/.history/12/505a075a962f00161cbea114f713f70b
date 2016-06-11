@@ -12,30 +12,26 @@ public class Problem33 {
 
 		int result=1;
 		double number=0;
-		double reducedNumber=0;
+		double redusedNumber=0;
 		// 10 < num < den < 100
 		//1 =< n < d =< 9
 		for (int i = 1; i < 10; i++) {
 		    for (int d = 1; d < i; d++) {
 		        for (int n = 1; n < d; n++) {
-		        	//  n/d
-		        	reducedNumber=reducedNumber(n, d);
-		        	
+		        	redusedNumber=reducedNumber(n, d);
 		        	//example: 12/14
 		        	number=origNumber(10*i+n, 10*i +d);
-		        	result=addResultIfEqual(number, reducedNumber, d, n, result);
-		        	
+		        	System.out.println(number);
 		        	//example: 12/41
 		        	number=origNumber(10*i+n, 10*d+i);
-		        	result=addResultIfEqual(number, reducedNumber, d, n, result);
-		        	
 		        	//example: 21/14
 		        	number=origNumber(10*n+i, 10*i+d);
-		        	result=addResultIfEqual(number, reducedNumber, d, n, result);
-		        	
 		        	//example: 21/41
 		        	number=origNumber(10*n+i, 10*d+i);
-		        	result=addResultIfEqual(number, reducedNumber, d, n, result);
+		            if (number == redusedNumber) {		           
+		            	result*=d;	            	
+		            }
+		            result/=n;
 		        }
 		    }
 		}
@@ -43,13 +39,7 @@ public class Problem33 {
 	
 	}
 
-	private static int addResultIfEqual(double number, double reducedNumber, int d, int n, int result){
-		 if (number == reducedNumber) {		           
-         	result*=d;
-         	result/=n;
-         }
-		return result;
-	}
+	
 	private static double origNumber(int numerator, int denominator){
 		return	(double)numerator/(double)denominator;	
 	}

@@ -18,21 +18,16 @@ public class Problem33 {
 		for (int i = 1; i < 10; i++) {
 		    for (int d = 1; d < i; d++) {
 		        for (int n = 1; n < d; n++) {
-		        	//  n/d
 		        	reducedNumber=reducedNumber(n, d);
-		        	
 		        	//example: 12/14
 		        	number=origNumber(10*i+n, 10*i +d);
 		        	result=addResultIfEqual(number, reducedNumber, d, n, result);
-		        	
 		        	//example: 12/41
 		        	number=origNumber(10*i+n, 10*d+i);
 		        	result=addResultIfEqual(number, reducedNumber, d, n, result);
-		        	
 		        	//example: 21/14
 		        	number=origNumber(10*n+i, 10*i+d);
 		        	result=addResultIfEqual(number, reducedNumber, d, n, result);
-		        	
 		        	//example: 21/41
 		        	number=origNumber(10*n+i, 10*d+i);
 		        	result=addResultIfEqual(number, reducedNumber, d, n, result);
