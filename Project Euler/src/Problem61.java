@@ -1,4 +1,4 @@
-import java.sql.Array;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -7,6 +7,18 @@ import java.util.Map;
 
 public class Problem61 {
 
+	private static class Result{	
+		private List<Integer> result=new ArrayList<>();
+		private int[] types=new int[]{0,0,0,0,0,1};
+		public Result(){			
+		}
+		@Override
+		public String toString() {
+			return "Result [result=" + result + ", types=" + Arrays.toString(types) + "]";
+		}
+		
+		
+	}
 	public static void main(String[] args) {
 		Map<Integer, List<Integer>> res = new HashMap<>();
 		for (int i = 3; i < 9; i++) {
@@ -18,15 +30,44 @@ public class Problem61 {
 			System.out.println(entry.getKey() +" :"+ entry.getValue());
 		}
 		
-		List<Integer> types=Arrays.asList(3, 4, 5, 6, 7, 8);
-		List<Integer> l;
-		int current=0;
+		List<Result> resultLists=new ArrayList<>();
+		List<Integer> initList=res.get(8);
+				
+		for (int i = 0; i < initList.size(); i++) {
+			Result r=new Result();
+			r.result.add(initList.get(i));
+			resultLists.add(r);
+		}
 		
 	
+		for (int i = 0; i < resultLists.size(); i++) {
+			findNext(resultLists.get(i), res);
+		}
 		
-		//System.out.println(result);
+		System.out.println(resultLists);
+		for (int i = 0; i < resultLists.size(); i++) {
+			if (resultLists.get(i).result.size()==6) {
+				System.out.println(resultLists.get(i));
+			}
+		}
 		
+	}
+	
+	private static void findNext(Result current, Map<Integer, List<Integer>> res){
 		
+		for (int j = 0; j < res.size(); j++) {
+			List<Integer> mapList=res.get(j+3);
+		
+			for (int k = 0; k < mapList.size(); k++) {
+				if (lastTwoDigits(current.result.get(current.result.size() -1))
+						==firstTwoDigits(mapList.get(k)) && current.types[j]==0) {
+					current.types[j]=1;
+					current.result.add(mapList.get(k));
+					break;
+				}
+				
+			}
+		}
 		
 	}
 	
@@ -37,6 +78,7 @@ public class Problem61 {
 		int j =Character.digit(num.charAt(1), 10);
 		return i+j;		
 	}
+	
 	private static int lastTwoDigits(long number){
 		String num = String.valueOf(number);
 		int i = Character.digit(num.charAt(2), 10)*10;
@@ -44,6 +86,7 @@ public class Problem61 {
 		return i+j;	
 		
 	}
+	
 	private static List<Integer> generateNumbersOfEveryType(int type) {
 
 		List<Integer> listOfNumbers=new ArrayList<>();
