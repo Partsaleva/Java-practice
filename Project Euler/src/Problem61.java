@@ -50,6 +50,7 @@ public class Problem61 {
 				System.out.println(resultLists.get(i));
 			}
 		}
+	//	System.out.println(hasRoot(3, 8256));
 		
 	}
 	
@@ -123,7 +124,7 @@ public class Problem61 {
 				break;
 			}
 			if (number > 1010 && number <10_000 &&
-					lastTwoDigits(number) > 10){
+					lastTwoDigits(number) > 9){
 				listOfNumbers.add(number);
 			}
 
@@ -132,7 +133,7 @@ public class Problem61 {
 		return listOfNumbers;
 	}
 
-	/* 
+/*
 	private static boolean hasRoot(int type, long number){
 		double root=0;
 		 switch (type) {
