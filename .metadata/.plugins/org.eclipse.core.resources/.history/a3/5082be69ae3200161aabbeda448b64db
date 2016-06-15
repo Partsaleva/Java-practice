@@ -1,0 +1,20 @@
+
+public class Problem3 {
+
+	public static void main(String[] args) {
+		long number=600851475143l;
+		System.out.println(isPrime(number));
+		
+
+		
+	}
+
+	private static boolean isPrime(long num){
+		for (int i = 2; i < num; i++) {
+			if (num % i == 0) {
+				return false;
+			}
+		}
+		return true;
+	}
+}

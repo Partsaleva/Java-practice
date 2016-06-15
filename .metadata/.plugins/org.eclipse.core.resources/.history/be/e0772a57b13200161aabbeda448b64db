@@ -1,0 +1,24 @@
+
+public class Problem3 {
+
+	public static void main(String[] args) {
+		long number=600851475143l;
+		for (long i = number/2; i > 2; i--) {
+			if (isPrime(i) && number% i==0) {
+				System.out.println(i);
+			}
+		}
+
+		
+	}
+
+	private static boolean isPrime(long num){
+		int max= (int) Math.sqrt(num);
+		for (int i = 2;i < max; i++) {
+			if (num % i == 0) {
+				return false;
+			}
+		}
+		return true;
+	}
+}

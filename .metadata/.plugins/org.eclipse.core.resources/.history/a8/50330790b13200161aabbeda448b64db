@@ -1,0 +1,26 @@
+
+public class Problem3 {
+
+	public static void main(String[] args) {
+		long number=600851475143l;
+		long number = number;
+		long largestFact = 0;
+		 
+		int i = 2;
+		while (i * i <= number) {
+		    if (number % i == 0) {
+		        number = number / i;
+		        largestFact = i;
+		    } else {
+		        i++;
+		    }
+		}
+		if (number > largestFact) { // the remainder is a prime number
+		    largestFact = number;
+		}
+		System.out.println(largestFact);
+		
+	}
+
+	
+}
