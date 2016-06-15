@@ -3,22 +3,24 @@
 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ...
 By considering the terms in the Fibonacci sequence whose values do not exceed 
 four million, find the sum of the even-valued terms.*/
-public class Problem2 {
+
+public class Problem3 {
 
 	public static void main(String[] args) {
-		int number=0, f1=1, f2=2;
-		int i=0, sum=2;
-		while(number < 4_000_000){
-			number=f1+f2;
-			f1=f2;
-			f2=number;
-			i++;
-			if (i % 3==0) {
-				sum+=number;
+		long number=600851475143l;
+		long largestFact = 0;
+		int max=(int) Math.sqrt(number);
+		
+		for (int i = 2; i < max; i++) {
+			if (number % i == 0) {
+				number /= i;
+				largestFact = i;
 			}
 		}
-
-		System.out.println(sum);
+		System.out.println(largestFact);
+	
+		
 	}
 
+	
 }
