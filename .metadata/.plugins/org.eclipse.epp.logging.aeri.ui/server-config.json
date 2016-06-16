@@ -1,7 +1,7 @@
 {
   "version": "v1",
   "title": "Eclipse Automated Error Reporting Service",
-  "timestamp": 1465394881764,
+  "timestamp": 1466050952706,
   "ttl": 10080,
   "helpUrl": "https://wiki.eclipse.org/EPP/Logging",
   "feedbackUrl": "http://ctrlflow.com/automated-error-reporting",
@@ -48,5 +48,5 @@
     "org.eclipse.pde.core::The current target platform contains errors*",
     "org.eclipse.ui::Conflicting handlers for*"
   ],
-  "problemsZipLastDownloadTimestamp": 1465455324972
+  "problemsZipLastDownloadTimestamp": 0
 }
