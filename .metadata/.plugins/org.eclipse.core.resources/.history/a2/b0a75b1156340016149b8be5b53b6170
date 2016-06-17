@@ -1,0 +1,18 @@
+
+public class Test {
+
+	public static void main(String[] args) {
+		getIntegerComplement(50);
+
+	}
+
+	static int getIntegerComplement(int n) {
+		Integer.toString(n, 2);
+		int bin= Integer.parseInt(Integer.toString(n, 2));
+		Integer result=bin & 1;
+		System.out.println(result.reverseBytes(8));
+		return n;
+
+
+    }
+}
