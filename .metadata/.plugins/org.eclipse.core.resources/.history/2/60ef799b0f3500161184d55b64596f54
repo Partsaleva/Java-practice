@@ -1,0 +1,19 @@
+
+public class Problem06 {
+
+	public static void main(String[] args) {
+		int sumOfSquares=0;
+		for (int i = 1; i < 101; i++) {
+			sumOfSquares+= ( i*(i + 1) * (2*i + 1) ) / 6;
+		}
+
+		int squareOfSum=0, sum=0;
+		for (int i = 1; i < 101; i++) {
+			sum=( i*(i + 1)) /2;
+			squareOfSum+=sum*sum;
+		}
+		
+		System.out.println(sumOfSquares - squareOfSum);
+	}
+
+}

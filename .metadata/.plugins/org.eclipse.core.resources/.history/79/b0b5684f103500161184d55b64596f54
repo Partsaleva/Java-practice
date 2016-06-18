@@ -1,0 +1,13 @@
+
+public class Problem06 {
+
+	public static void main(String[] args) {
+		int N=100;		
+		int sumOfSquares= ( N*(N + 1) * (2*N + 1) ) / 6;
+		int	squareOfSum= ( N*(N+ 1)) /2 * ( N*(N+ 1)) /2;
+		
+		
+		System.out.println(squareOfSum - sumOfSquares);
+	}
+
+}

@@ -1,7 +1,7 @@
 
 public class Test {
 
-	//value of number with inverted bits
+	//value of number with reversed bits
 	public static void main(String[] args) {
 		System.out.println(getIntegerComplement(50));
 
