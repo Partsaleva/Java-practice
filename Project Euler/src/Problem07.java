@@ -12,11 +12,10 @@ public class Problem07 {
 		primes.add(2); 
 		
 		boolean isPrime;
-		int sqrtNum=0; int pr=1;
+		int pr=1;
 		
 		while(primes.size() < limit){
 			pr+=2;
-			sqrtNum=pr*pr;
 			isPrime=true;
 			for (int i = 0; i < primes.size(); i++) {
 				if (pr % primes.get(i) == 0) {
