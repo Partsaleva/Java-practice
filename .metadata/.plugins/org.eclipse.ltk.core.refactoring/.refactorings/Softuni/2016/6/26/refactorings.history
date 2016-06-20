@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;problems8to12&apos; to &apos;problems9to12&apos;&#x0A;- Original project: &apos;Softuni&apos;&#x0A;- Original element: &apos;Softuni/Homework 3: Java-Collections-Basics/problems8to12&apos;&#x0A;- Renamed element: &apos;Softuni/Homework 3: Java-Collections-Basics/problems9to12&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;problems8to12&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/Homework 3: Java-Collections-Basics&lt;problems8to12" name="problems9to12" qualified="false" references="true" stamp="1466310042300" textual="false" version="1.0"/>
+</session>
