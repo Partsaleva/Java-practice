@@ -1,0 +1,15 @@
+package other;
+
+public class Fuzz {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public String map(int n){ 
+		return (n % 3 == 0 ? "Fizz" : "") + (n % 5 == 0 ? "Buzz" : "");
+	}
+
+	
+}
