@@ -69,7 +69,7 @@ public class Problem11 {
 	            }
 	 
 	            // diagonally down
-	            if ((col < gridArr[0].length - numbers) && (row < gridArr[1].length - numbers)) {
+	            if ((col < gridArr[0].length - numbers) && (row < gridArr[0].length - numbers)) {
 	                tempProd = gridArr[row][col];
 	                for (int i = 1; i < numbers; i++) {
 	                    tempProd *= gridArr[row + i][ col + i];

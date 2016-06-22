@@ -1,0 +1,26 @@
+
+public class Problem12 {
+
+	public static void main(String[] args) {
+		bruteForce();
+
+	}
+
+	private static void bruteForce() {
+		long number=0;
+		int count=0;
+		for (int i = 1; i < Integer.MAX_VALUE; i++) {
+			number+=i;
+			
+			for (int j = 1; j < Integer.MAX_VALUE; j++) {
+				for (int j2 = 1; j2 < Integer.MAX_VALUE; j2++) {
+					
+				}
+			}
+			
+			
+		}
+		
+	}
+
+}

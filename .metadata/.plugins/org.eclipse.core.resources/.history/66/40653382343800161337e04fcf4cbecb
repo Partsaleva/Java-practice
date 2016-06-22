@@ -1,0 +1,33 @@
+
+public class Problem12 {
+
+	public static void main(String[] args) {
+		System.out.println(bruteForce());
+
+	}
+
+	private static long bruteForce() {
+		long number=0,result=0;
+		int count=0;
+		for (int i = 1; i < Integer.MAX_VALUE; i++) {
+			number+=i;
+			
+			for (int j = 1; j < Integer.MAX_VALUE; j++) {
+				for (int j2 = 1; j2 < Integer.MAX_VALUE; j2++) {
+					if (number % (j*j2) == 0) {
+						count++;
+						if (count == 500) {
+							result= number;
+							break;
+						}
+					}
+				}
+			}
+			
+			
+		}
+		return result;
+		
+	}
+
+}

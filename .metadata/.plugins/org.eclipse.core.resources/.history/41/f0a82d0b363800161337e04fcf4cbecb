@@ -1,0 +1,15 @@
+
+public class Problem12 {
+
+	public static void main(String[] args) {
+		System.out.println(bruteForce());
+
+	}
+
+	private static long bruteForce() {
+		return 0;
+		
+		
+	}
+
+}

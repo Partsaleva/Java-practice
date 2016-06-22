@@ -2,25 +2,30 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="9138121526699123824" key="selection"/>
+		<item value="gridArr[row][col]" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="9138121526699123824"/>
-			<item value="newnumm"/>
-			<item value="counter"/>
-			<item value="12"/>
-			<item value="81"/>
-			<item value="8256"/>
-			<item value="45"/>
-			<item value="8464"/>
+			<item value="gridArr[col][row]"/>
+			<item value="gridArr[row][col]"/>
+			<item value="gridArr[col, row]"/>
+			<item value="numbersInProduct"/>
+			<item value="gridArr.GetLength(1)"/>
+			<item value=".[0].length"/>
+			<item value=".GetLength(0)"/>
+			<item value="inputSquare"/>
 		</list>
 		<list key="replacehistory">
+			<item value="gridArr[row][col]"/>
+			<item value="gridArr[col][row]"/>
+			<item value="numbers"/>
+			<item value="gridArr[1].length"/>
+			<item value="[0].length"/>
+			<item value=".[0].length"/>
+			<item value="gridArr"/>
 			<item value="number"/>
-			<item value="i"/>
-			<item value="check"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
