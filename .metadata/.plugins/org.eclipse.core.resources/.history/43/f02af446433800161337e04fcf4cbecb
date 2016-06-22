@@ -1,0 +1,9 @@
+/*Work out the first ten digits of the sum of the following one-hundred 50-digit numbers.*/
+public class Problem13 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

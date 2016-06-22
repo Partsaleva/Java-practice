@@ -3,7 +3,7 @@ package other;
 public class RemoveDuplChar {
 
 	public static void main(String[] args) {
-		System.out.println(removeDuplicatesFromString("aebbbcdee"));
+		System.out.println(removeDuplicatesFromString("aaebbbcdee"));
 
 	}
 
