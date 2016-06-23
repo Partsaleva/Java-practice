@@ -10,11 +10,11 @@ public class Reverse {
 		char temp;
 	    char[] arr = new char[str.length()];
 	    arr = str.toCharArray();
-	    int len = arr.length;
+	    int len = arr.length-1;
 	    for(int i = 0 ; i < str.length()/2 ; i++){
 	        temp = arr[i];
-	        arr[i]=arr[len-1];
-	        arr[len-1]=temp;
+	        arr[i]=arr[len];
+	        arr[len]=temp;
 	        len--;
 	    }
 		return String.valueOf(arr);

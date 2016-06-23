@@ -2,30 +2,30 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="gridArr[row][col]" key="selection"/>
+		<item value="size" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="gridSize"/>
+			<item value="sequence"/>
 			<item value="gridArr[col][row]"/>
 			<item value="gridArr[row][col]"/>
 			<item value="gridArr[col, row]"/>
 			<item value="numbersInProduct"/>
 			<item value="gridArr.GetLength(1)"/>
 			<item value=".[0].length"/>
-			<item value=".GetLength(0)"/>
-			<item value="inputSquare"/>
 		</list>
 		<list key="replacehistory">
+			<item value="size"/>
+			<item value="number"/>
 			<item value="gridArr[row][col]"/>
 			<item value="gridArr[col][row]"/>
 			<item value="numbers"/>
 			<item value="gridArr[1].length"/>
 			<item value="[0].length"/>
 			<item value=".[0].length"/>
-			<item value="gridArr"/>
-			<item value="number"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
