@@ -1,56 +1,64 @@
 package threads.pi;
 
+
+
 import java.math.BigDecimal;
-import java.math.RoundingMode;
+import java.math.BigInteger;
+import java.util.Calendar;
 import java.util.concurrent.Callable;
 
-public class PartSum implements Callable<BigDecimal>{
+public class PartSum implements Callable<BigDecimal> {
 
 	private int k;
 	private boolean quiet;
-	
+
 	public PartSum(int k, boolean quiet) {
 		this.k = k;
-		this.quiet=quiet;
+		this.quiet = quiet;
 	}
-	
-	
-	public int fact(int n) {
-        int fact = 1; 
-        for (int i = 1; i <= n; i++) {
-            fact *= i;
-        }
-        return fact;
-    }
+
+	private static BigInteger factorial(int n) {
+		BigInteger factorial = BigInteger.ONE;
+		if (n == 0 || n == 1) {
+			return factorial;
+		}
+		while (n > 1) {
+			BigInteger N = BigInteger.valueOf(n);
+			factorial = factorial.multiply(N);
+			n--;
+		}
+		return factorial;
+	}
+
 	@Override
 	public BigDecimal call() throws Exception {
-		if(quiet){
+		if (quiet) {
 			return quietMethod();
-		}
-		else{
+		} else {
 			return infoMethod();
 		}
 	}
-	
 
 	private BigDecimal quietMethod() {
-		return new BigDecimal((fact(4*k)*(1103+(26390*k))))
-				.divide(new BigDecimal(Math.pow(fact(k), 4)).multiply(new BigDecimal(Math.pow(396, (4*k)))),RoundingMode.HALF_UP);
+
+		BigDecimal num = new BigDecimal(factorial(4 * k).multiply(BigInteger.valueOf(1103 + 26390 * k)));
+		BigDecimal denom = new BigDecimal(factorial(k).pow(4).multiply(BigInteger.valueOf(396).pow(4 * k)));
+		return (num.divide(denom, 1005, BigDecimal.ROUND_HALF_UP));
 	}
 
-
-	private BigDecimal infoMethod(){
+	private BigDecimal infoMethod() {
 		System.out.println(Thread.currentThread().getName() + " started");
-		long start = System.nanoTime();
-		
-		BigDecimal sum=new BigDecimal((fact(4*k)*(1103+(26390*k))))
-				.divide(new BigDecimal(Math.pow(fact(k), 4)).multiply(new BigDecimal(Math.pow(396, (4*k)))));
-			
-		long time=System.nanoTime() - start;
-		
-	    System.out.println(Thread.currentThread().getName() + " stopped");
-	    System.out.println(Thread.currentThread().getName() + 
-	    		" execution time was (millis): "+ time);;
-	    return sum;
+		long start = Calendar.getInstance().getTimeInMillis();
+
+		BigDecimal num = new BigDecimal(factorial(4 * k).multiply(BigInteger.valueOf(1103 + 26390 * k)));
+		BigDecimal denom = new BigDecimal(factorial(k).pow(4).multiply(BigInteger.valueOf(396).pow(4 * k)));
+		BigDecimal sum = num.divide(denom, 1005, BigDecimal.ROUND_HALF_UP);
+
+		long time = Calendar.getInstance().getTimeInMillis() - start;
+
+		System.out.println(Thread.currentThread().getName() + " stopped");
+		System.out.println(Thread.currentThread().getName() + " execution time was (millis): " + time);
+		;
+		return sum;
 	}
 }

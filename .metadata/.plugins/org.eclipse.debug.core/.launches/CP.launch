@@ -7,6 +7,6 @@
 <listEntry value="1"/>
 </listAttribute>
 <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="threads.pi.CP"/>
-<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="-p 33 -t 7 -q"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="-p 1000 -t 8"/>
 <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Algorithm"/>
 </launchConfiguration>
