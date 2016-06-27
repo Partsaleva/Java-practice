@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;i&apos; in &apos;Problem21.sumOfAmicableNumbers()&apos; to &apos;a&apos;&#x0A;- Original project: &apos;Project Euler&apos;&#x0A;- Original element: &apos;Problem21.sumOfAmicableNumbers().i&apos;&#x0A;- Renamed element: &apos;i&apos;&#x0A;- Update references to refactored element" description="Rename local variable &apos;i&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;{Problem21.java[Problem21~sumOfAmicableNumbers@i!706!714!710!710!I!0!false" name="a" references="true" stamp="1466998946156" version="1.0"/>
+</session>
