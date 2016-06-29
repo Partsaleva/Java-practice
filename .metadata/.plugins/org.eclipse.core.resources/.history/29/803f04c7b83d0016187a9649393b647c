@@ -17,12 +17,12 @@ public class RecursiveBinarySearch {
         System.out.println(search(8, arr));
     }
 
-    public static int search(int num, int[] arr) {
+    private static int search(int num, int[] arr) {
         return binarySearch(arr, 0, arr.length-1, num);
         
     }
     
-    private static int binarySearch(int[] a, int start, int end, int num) {
+    public static int binarySearch(int[] a, int start, int end, int num) {
         int middle = (start + end) / 2;
         if(end < start) {
             return -1;
