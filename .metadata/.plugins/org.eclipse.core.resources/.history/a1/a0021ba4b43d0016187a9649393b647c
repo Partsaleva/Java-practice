@@ -28,7 +28,7 @@ public class Problem21 {
         return sum;
     }
     
-    public static int sumOfDividers(int number){
+    private static int sumOfDividers(int number){
         int sum=0;
         for (int i = 1; i < number; i++) {
             if (number % i == 0) {
