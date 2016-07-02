@@ -18,7 +18,7 @@ public class Problem05 {
 		System.out.println(result);
 	}
 
-	private static List<Integer> generatePrimes(int limit){
+	public static List<Integer> generatePrimes(int limit){
 		List<Integer> nums=new ArrayList<>();
 		nums.add(2);
 		boolean isPrime;
