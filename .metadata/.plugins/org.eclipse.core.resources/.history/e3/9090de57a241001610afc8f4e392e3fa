@@ -1,4 +1,5 @@
 
+
 //Problem 2
 public class SumCards {
 
@@ -17,19 +18,12 @@ public class SumCards {
     public static int sumOfCards(String input){
         int sum=0;
         input=input.replaceAll("[SHDC]", "");
+        int sumOfEqualNums=0;
         int value=0;
-        int sumOfEqualNums=value;
         String[] cardValues=input.split(" ");
         
-        for (int i = 1; i < cardValues.length; i++) {
-            value=getValue(cardValues[i-1]);
-            sumOfEqualNums=value;
-            if(cardValues[i-1].equals(cardValues[i])){
-                sumOfEqualNums+=getValue(cardValues[i]);
-            }
-            else{
-                sum+=sumOfEqualNums*2;
-            }
+        for (int i = 0; i < cardValues.length; i++) {
+           
         }
         return sum;
     }

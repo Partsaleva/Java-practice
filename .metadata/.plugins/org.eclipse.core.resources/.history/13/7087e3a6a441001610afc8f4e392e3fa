@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.List;
 
 //Problem 2
 public class SumCards {
@@ -23,7 +25,6 @@ public class SumCards {
         
         for (int i = 1; i < cardValues.length; i++) {
             value=getValue(cardValues[i-1]);
-            sumOfEqualNums=value;
             if(cardValues[i-1].equals(cardValues[i])){
                 sumOfEqualNums+=getValue(cardValues[i]);
             }
