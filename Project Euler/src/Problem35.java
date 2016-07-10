@@ -9,37 +9,45 @@ public class Problem35 {
 
     public static void main(String[] args) {
         List<Long> primes=new ArrayList<>();
-        for (long i = 2; i < 1_000_000; i++) {
+        for (long i = 1000; i < 10_000; i++) {
             if (isPrime(i)) {
                 primes.add(i);
             }
         }
-        primes=reducePrimes(primes);
-        System.out.println(primes.size());
+       primes=reducePrimes(primes);
+        System.out.println(primes);
      
 
     }
 
   
     
+    
     public static List<Long> reducePrimes(List<Long> primes){
-        long number=0;
+        Long number=null;
+        List<Long> t=primes;
+        long num=0;
         for (int i = 0; i < primes.size(); i++) {
             number=primes.get(i);
-            while(number>0){
-                long n=number %10;
-                if (n%2==0 || n == 5) {
-                    primes.remove(i);
+            num=number;
+            while(num>0){
+                long n=num %10;
+                if (n%2 == 0 || n == 5) {
+                    t.remove(number);
+                    break;
+                  
                 }
-                number/=10;
-            }            
-        }     
-        return primes;       
+                num/=10;
+            } 
+           
+        }  
+        
+        return t;       
     }
     
     private static boolean isPrime(long number){
         int lim=(int)Math.sqrt(number);
-        for (int i = 2; i < lim; i++) {
+        for (int i = 2; i <= lim; i++) {
             if (number % i == 0) {
                 return false;
             }
