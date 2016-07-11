@@ -1,0 +1,75 @@
+import java.util.ArrayList;
+import java.util.List;
+
+/*The number 3797 has an interesting property. Being prime itself, 
+ * it is possible to continuously remove digits from left to right, 
+ * and remain prime at each stage: 3797, 797, 97, and 7. Similarly 
+ * we can work from right to left: 3797, 379, 37, and 3.
+Find the sum of the only eleven primes that are both truncatable from left to right and right to left.
+NOTE: 2, 3, 5, and 7 are not considered to be truncatable primes.*/
+public class Problem37 {
+
+    public static void main(String[] args) {
+        List<Long> primes=new ArrayList<>();
+        for (long i = 10; i < 1_000_000; i++) {
+            if (isPrime(i)) {
+                primes.add(i);
+            }
+        }
+        System.out.println(primes.get(primes.size()-1));
+        int count = 0;
+        int i = 0;
+        int sum=0;
+        while (count < 11) {
+            int rightTrunk = primes.get(i);
+            int leftTrunk = 0;
+            int multiplier = 1;
+            boolean isTrunkPrime = true;
+            while (rightTrunk > 0 && isTrunkPrime) {
+                leftTrunk += multiplier * (rightTrunk % 10);
+                isTrunkPrime = IsPrime(leftTrunk) && IsPrime(rightTrunk);
+                rightTrunk /= 10;
+                multiplier *= 10;
+            }
+         
+            if (isTrunkPrime) {
+                count++;
+                result += primeList[i];
+            }
+         
+            i++;
+        }
+        
+    }
+
+    
+    private static boolean isTruncatable(long number) {
+        long revNum=reverse(number);
+        while(number > 0 && revNum > 0){
+            if (!isPrime(number) || !isPrime(revNum)) {
+                return false;
+            }           
+            number/=10;
+            revNum/=10;
+        }
+        return true;
+    }
+    
+    private static boolean isPrime(long number){
+        if (number<2) {
+            return false;
+        }
+        int lim=(int)Math.sqrt(number);
+        for (int i = 2; i <= lim; i++) {
+            if (number % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+    
+    private static long reverse(long number) {
+        String s=new StringBuilder(Long.toString(number)).reverse().toString();
+        return Long.parseLong(s);
+    }
+}

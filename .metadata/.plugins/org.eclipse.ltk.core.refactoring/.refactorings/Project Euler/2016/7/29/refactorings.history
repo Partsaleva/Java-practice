@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;isTrunkPrime&apos; in &apos;Problem37.main(...)&apos; to &apos;isTruncatablePrime&apos;&#x0A;- Original project: &apos;Project Euler&apos;&#x0A;- Original element: &apos;Problem37.main(String[]).isTrunkPrime&apos;&#x0A;- Renamed element: &apos;isTrunkPrime&apos;&#x0A;- Update references to refactored element" description="Rename local variable &apos;isTrunkPrime&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;{Problem37.java[Problem37~main~\[QString;@isTrunkPrime!841!869!849!860!Z!0!false" name="isTruncatablePrime" references="true" stamp="1468214127163" version="1.0"/>
+</session>

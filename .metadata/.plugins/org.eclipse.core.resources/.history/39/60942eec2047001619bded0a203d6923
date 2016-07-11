@@ -1,0 +1,49 @@
+import java.util.ArrayList;
+import java.util.List;
+
+/*The number 3797 has an interesting property. Being prime itself, 
+ * it is possible to continuously remove digits from left to right, 
+ * and remain prime at each stage: 3797, 797, 97, and 7. Similarly 
+ * we can work from right to left: 3797, 379, 37, and 3.
+Find the sum of the only eleven primes that are both truncatable from left to right and right to left.
+NOTE: 2, 3, 5, and 7 are not considered to be truncatable primes.*/
+public class Problem37 {
+
+    public static void main(String[] args) {
+        System.out.println(isTruncatable(3797));
+        List<Long> primes=new ArrayList<>();
+        for (long i = 10; i < 1_000_000; i++) {
+            if (isPrime(i)) {
+                primes.add(i);
+            }
+        }
+
+        
+    }
+
+    
+    private static boolean isTruncatable(int number) {
+        int revNum=reverse(number);
+        int check=0;
+        while(number > 0 && revNum > 0){
+            if (!isPrime(number/10) || !isPrime(revNum/10)) {
+                return false;
+            }
+        }
+        return true;
+    }
+    
+    private static boolean isPrime(long number){
+        int lim=(int)Math.sqrt(number);
+        for (int i = 2; i <= lim; i++) {
+            if (number % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+    
+    private static int reverse(int number) {
+        return Integer.parseInt(Integer.toString(number));
+    }
+}
