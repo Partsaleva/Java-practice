@@ -42,7 +42,7 @@ public class Problem18 {
 		System.out.println(workArray[0][0]);
 	}
 
-	private void printArr() {
+	public void printArr() {
 		for (int i = 0; i < N; i++) {
 			for (int j = 0; j < N; j++) {
 				System.out.print(workArray[i][j] + " ");
@@ -52,7 +52,7 @@ public class Problem18 {
 		
 	}
 
-	public void fillArr(String tr){
+	private void fillArr(String tr){
 		String[] numbers=tr.split(" ");
 	
 		int k=-1;

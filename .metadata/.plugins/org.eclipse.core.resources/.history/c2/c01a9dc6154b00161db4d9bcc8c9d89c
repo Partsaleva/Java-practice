@@ -52,7 +52,7 @@ public class Problem18 {
 		
 	}
 
-	public void fillArr(String tr){
+	private void fillArr(String tr){
 		String[] numbers=tr.split(" ");
 	
 		int k=-1;
