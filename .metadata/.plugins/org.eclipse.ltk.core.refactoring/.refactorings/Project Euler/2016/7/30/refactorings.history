@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;m&apos; in &apos;Problem44.main(...)&apos; to &apos;k&apos;&#x0A;- Original project: &apos;Project Euler&apos;&#x0A;- Original element: &apos;Problem44.main(String[]).m&apos;&#x0A;- Renamed element: &apos;m&apos;&#x0A;- Update references to refactored element" description="Rename local variable &apos;m&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;{Problem44.java[Problem44~main~\[QString;@m!699!726!703!703!I!0!false" name="k" references="true" stamp="1468812881437" version="1.0"/>
+</session>
