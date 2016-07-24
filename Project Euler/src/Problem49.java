@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 /*The arithmetic sequence, 1487, 4817, 8147, in which each of the terms 
