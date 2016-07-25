@@ -1,2 +1,2 @@
 eclipse.preferences.version=1
-prefWatchExpressions=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<watchExpressions>\n<expression enabled\="true" text\="primes.get(i)"/>\n<expression enabled\="true" text\="current"/>\n<expression enabled\="true" text\="tempSum"/>\n<expression enabled\="true" text\="max"/>\n<expression enabled\="true" text\="sum"/>\n</watchExpressions>\n
+prefWatchExpressions=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<watchExpressions>\n<expression enabled\="true" text\="sumOfPrimes.get(i)"/>\n<expression enabled\="true" text\="sumOfPrimes.get(j)"/>\n<expression enabled\="true" text\="numberOfPrimes"/>\n<expression enabled\="true" text\="result"/>\n</watchExpressions>\n
