@@ -41,7 +41,7 @@ public class Problem49 {
         System.out.println(result);
     }
 
-    public static boolean isPermutation(int test, int number) {
+    private static boolean isPermutation(int test, int number) {
         int[] arr = new int[10];
         while(test > 0){
             arr[test % 10]++;
