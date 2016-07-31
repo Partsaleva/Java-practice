@@ -1,0 +1,21 @@
+
+public class Problem57 {
+
+    public static void main(String[] args) {
+        int count = 0;
+         
+        int den = 2;
+        int num = 3;
+         
+        for (int i = 1; i < 1000; i++) {
+             num += 2 * den;
+             den = num - den;
+             if (Integer.toString(num).length() > Integer.toString(den).length() ) {
+                count++;
+            }
+        }
+
+        System.out.println(count);
+    }
+
+}
