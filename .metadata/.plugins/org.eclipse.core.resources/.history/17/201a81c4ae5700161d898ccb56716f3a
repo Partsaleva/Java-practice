@@ -16,7 +16,6 @@ public class Problem58 {
             
         }
         System.out.println(all);
-        
     }
 
     private static int prime(long number) {
