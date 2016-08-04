@@ -20,7 +20,8 @@ public class Problem3CountSpecifiedWord {
                 + "embedded devices and mobile phones on the low end, to enterprise "
                 + "servers and supercomputers on the high end.";
 
-      String word="welcome";     
+      String word="welcome";
+     
       System.out.println(findWord(text1, word));      
       word="hello";
       System.out.println(findWord(text2, word));      
@@ -32,7 +33,7 @@ public class Problem3CountSpecifiedWord {
 
     private static int findWord(String text, String word){
         int count =0;
-        Pattern p=Pattern.compile("\\W*"+word.toLowerCase()+"\\W");
+        Pattern p=Pattern.compile("\\W"+word.toLowerCase()+"\\W");
         Matcher m=p.matcher(text.toLowerCase());
         while (m.find()) {
             count++;
