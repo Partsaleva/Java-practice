@@ -1,0 +1,10 @@
+/*Write a program to count the number of words in given sentence. 
+ * Use any non-letter character as word separator.*/
+public class Problem4CountAllWords {
+
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+
+    }
+
+}
