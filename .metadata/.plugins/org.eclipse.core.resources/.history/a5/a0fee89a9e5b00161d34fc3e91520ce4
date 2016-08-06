@@ -1,3 +1,6 @@
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 /*Problem 2. Count Substring Occurrences
 Write a program to find how many times given string appears in given 
 text as substring. The text is given at the first input line. 
