@@ -1,0 +1,11 @@
+
+public abstract class EnumExtTest { 
+    private String commandString;
+    public EnumExtTest(String s){
+        this.commandString=s;
+    }
+    public String toString(){
+        return commandString;       
+    }
+    public abstract void exec(String sec);
+}
