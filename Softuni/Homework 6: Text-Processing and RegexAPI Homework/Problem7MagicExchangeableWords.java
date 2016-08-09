@@ -1,6 +1,5 @@
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Map.Entry;
 
 /*Problem 7.  ***Magic exchangeable words
 Write a method that takes as input two strings of equal length, 
