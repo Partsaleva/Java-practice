@@ -8,7 +8,7 @@ public class Problem1MatchingADecimalNumbers {
 
     public static void main(String[] args) {
         List<String> numbers=new ArrayList<>(Arrays.asList("14529","-255.34","128","1.9e10","123,340.00","720p"));
-        Pattern p= Pattern.compile("^-?\\d+(,\\d+)*(\\.\\d+(e\\d+)?)?$");
+        Pattern p= Pattern.compile("\\-?\\d+,?\\.?\\d+e?\\.?\\d+p?");
         Matcher m=null;
         for (String str : numbers) {
             m=p.matcher(str);
