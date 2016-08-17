@@ -1,0 +1,9 @@
+/* try to extract the protocol, host and port of the all the resources listed.*/
+public class Problem8ParsingAndExtractingDataFromaURL {
+
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+
+    }
+
+}

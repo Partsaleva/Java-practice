@@ -1,5 +1,5 @@
 
-public class Problem6StartsandEndsWithCapitalLetter {
+public class Problem8ParsingAndExtractingDataFromaURL {
 
     public static void main(String[] args) {
         // TODO Auto-generated method stub
