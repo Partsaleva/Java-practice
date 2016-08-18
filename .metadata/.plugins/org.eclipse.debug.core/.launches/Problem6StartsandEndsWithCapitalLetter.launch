@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
-<listEntry value="/Softuni/Homework 6:: Text-Processing and RegexAPI Homework/Problem6StartsandEndsWithCapitalLetter.java"/>
+<listEntry value="/Softuni/Java Fundamentals/homework6TextProcessingandRegexAPIHomework/Problem6StartsandEndsWithCapitalLetter.java"/>
 </listAttribute>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
 <listEntry value="1"/>
 </listAttribute>
-<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="Problem6StartsandEndsWithCapitalLetter"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="homework6TextProcessingandRegexAPIHomework.Problem6StartsandEndsWithCapitalLetter"/>
 <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Softuni"/>
 </launchConfiguration>

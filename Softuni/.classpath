@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" path="Homework1: Java Syntax"/>
-	<classpathentry kind="src" path="Homework2: Java Streams"/>
-	<classpathentry kind="src" path="Homework 3: Java-Collections-Basics"/>
-	<classpathentry kind="src" path="Exam Problems"/>
-	<classpathentry kind="src" path="Homework 5: Functional-Programming-and-StreamAPI"/>
-	<classpathentry kind="src" path="Homework 6: Text-Processing and RegexAPI Homework"/>
+	<classpathentry kind="src" path="Java Fundamentals"/>
+	<classpathentry kind="src" path="Java Advanced"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
