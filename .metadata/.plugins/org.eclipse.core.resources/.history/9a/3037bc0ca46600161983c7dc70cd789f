@@ -1,0 +1,12 @@
+
+public class Test {
+
+    public static void main(String[] args) {
+        String time = "07:05:45PM";
+        System.out.println(time.lastIndexOf("P"));
+            
+        
+
+    }
+
+}

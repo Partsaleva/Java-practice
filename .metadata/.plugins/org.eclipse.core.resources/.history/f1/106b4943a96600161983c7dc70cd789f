@@ -1,0 +1,17 @@
+
+public class Test {
+
+    public static void main(String[] args) {
+        String time = "07:05:45PM";
+        int h= time.charAt(1)-'0';
+        System.out.println(h);
+        if(time.charAt(8)=='P'){
+            h+=12;
+        }
+            
+        time=Integer.toString(h)+time.substring(2,8);
+        System.out.println();
+
+    }
+
+}

@@ -1,0 +1,17 @@
+
+public class Test {
+
+    public static void main(String[] args) {
+        String time = "07:05:45PM";
+        int h= time.charAt(1)-'0';
+        System.out.println(h);
+        System.out.println(time.charAt(2));
+        if(time.charAt(8)=='P'){
+            
+        }
+            
+        
+
+    }
+
+}

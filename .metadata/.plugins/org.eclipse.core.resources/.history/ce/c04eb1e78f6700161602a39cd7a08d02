@@ -1,0 +1,11 @@
+
+public class BST {
+
+    private int value;
+    private Node left;
+    private Node right;
+    
+    private class Node{
+        
+    }
+}
