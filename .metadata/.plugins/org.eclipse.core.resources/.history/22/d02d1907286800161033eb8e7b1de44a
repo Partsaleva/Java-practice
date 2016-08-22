@@ -1,5 +1,6 @@
+package h1Java_Advanced_Stacks_and_Queues;
 
-public class Problem6TrimmingWhitespace {
+public class Problem3MaximumElement {
 
     public static void main(String[] args) {
         // TODO Auto-generated method stub
