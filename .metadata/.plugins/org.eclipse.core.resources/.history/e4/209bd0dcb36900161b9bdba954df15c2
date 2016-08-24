@@ -1,0 +1,25 @@
+package h1Java_Advanced_Stacks_and_Queues;
+
+import java.util.ArrayDeque;
+
+public class Problem5CalculateSequenceWithQueue {
+
+    public static void main(String[] args) {
+//                  S1 = N
+//                S2 = S1 + 1
+//                S3 = 2*S1 + 1
+//                S4 = S1 + 2
+//                S5 = S2 + 1
+        int n=2;
+        ArrayDeque<Integer> line=new ArrayDeque<>();
+        for (int i = 0; i < 50; i++) {
+            line.addLast(n);
+            int s=line.removeFirst();
+            System.out.println(s);
+            line.addLast(s+1);
+            line.addLast(2*s+1);
+            line.addLast(s+2);
+        }
+    }
+
+}
