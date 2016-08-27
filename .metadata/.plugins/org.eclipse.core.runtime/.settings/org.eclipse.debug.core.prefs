@@ -1,2 +1,2 @@
 eclipse.preferences.version=1
-prefWatchExpressions=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<watchExpressions>\n<expression enabled\="true" text\="parentheses.peek()"/>\n<expression enabled\="true" text\="input.charAt(i)"/>\n<expression enabled\="true" text\="input"/>\n</watchExpressions>\n
+prefWatchExpressions=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<watchExpressions>\n<expression enabled\="true" text\="distance.poll()"/>\n<expression enabled\="true" text\="fuel.poll()"/>\n<expression enabled\="true" text\="currentPetrol"/>\n</watchExpressions>\n
