@@ -7,8 +7,8 @@ import java.util.Scanner;
 public class Problem6TruckTour {
 
     public static void main(String[] args) {
-        int n=5;
         Queue<Pump> petrol=new LinkedList<>();
+ //       int n=5;
 //        Scanner scan=new Scanner(System.in);       
 //        for (int i = 0; i < n; i++) {
 //            String[] data=scan.nextLine().split(" ");
