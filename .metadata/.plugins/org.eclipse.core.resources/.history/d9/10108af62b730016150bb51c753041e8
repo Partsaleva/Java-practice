@@ -10,11 +10,8 @@ public class Problem5Phonebook {
         Map<String, String> phonebook=new HashMap<>();
         Scanner scan=new Scanner(System.in);
         String[] input=null;
-        while (true) {
+        while (scan.hasNextLine()) {
             input=scan.nextLine().split("-");
-            if (input[0].equals("stop")) {
-                break;
-            }
             if (input.length==2) {
                 phonebook.put(input[0], input[1]);
             }
