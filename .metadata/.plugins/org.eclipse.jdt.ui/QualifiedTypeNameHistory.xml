@@ -13,7 +13,6 @@
 <fullyQualifiedTypeName name="java.util.BitSet"/>
 <fullyQualifiedTypeName name="java.awt.print.Printable"/>
 <fullyQualifiedTypeName name="javax.sound.midi.MidiChannel"/>
-<fullyQualifiedTypeName name="java.util.LinkedHashMap"/>
 <fullyQualifiedTypeName name="Problem17"/>
 <fullyQualifiedTypeName name="Problem18"/>
 <fullyQualifiedTypeName name="java.sql.Timestamp"/>
@@ -59,5 +58,6 @@
 <fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="java.util.Set"/>
 <fullyQualifiedTypeName name="java.util.HashSet"/>
+<fullyQualifiedTypeName name="java.util.LinkedHashMap"/>
 <fullyQualifiedTypeName name="java.util.HashMap"/>
 </qualifiedTypeNameHistroy>

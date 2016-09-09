@@ -12,7 +12,7 @@ public class Problem10PopulationCounter {
         Map<String, Map<String, Integer>> map=new HashMap<>();
         String[] input=null;
         while (true) {
-            input=scan.nextLine().split("\\|");
+            input=scan.nextLine().split("\|");
             if (input[0].equals("report")) {
                 break;
             } 

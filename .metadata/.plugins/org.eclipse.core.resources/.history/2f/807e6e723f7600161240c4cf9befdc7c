@@ -12,7 +12,7 @@ public class Problem10PopulationCounter {
         Map<String, Map<String, Integer>> map=new HashMap<>();
         String[] input=null;
         while (true) {
-            input=scan.nextLine().split("\\|");
+            input=scan.nextLine().split("|");
             if (input[0].equals("report")) {
                 break;
             } 
@@ -23,21 +23,8 @@ public class Problem10PopulationCounter {
             if (map.containsKey(key)) {
                 cities=map.get(key); 
                 cities.put(city, population);
-            }else {
-                cities.put(city, population);
-                map.put(key, cities);
-            }             
-        }
-        for (Entry<String, Map<String, Integer>> entry : map.entrySet()) {
-            int population=0;
-            Map<String, Integer> m =entry.getValue();
-            for (Entry<String, Integer> ent : m.entrySet()){
-                population+=ent.getValue();
-            }
-            System.out.println(entry.getKey()+"(total population: "+population+")");
-            for (Entry<String, Integer> ent : m.entrySet()){
-                System.out.println(ent.getKey()+" => "+ent.getValue());
-            }
+            }    
+            
         }
         scan.close();
     }
