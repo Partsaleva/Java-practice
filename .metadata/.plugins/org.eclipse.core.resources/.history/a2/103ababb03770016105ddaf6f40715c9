@@ -1,6 +1,6 @@
 package h2Sets_and_Maps;
 
-public class Problem1UniqueUsernames {
+public class Problem11LogsAggregator {
 
     public static void main(String[] args) {
         // TODO Auto-generated method stub
