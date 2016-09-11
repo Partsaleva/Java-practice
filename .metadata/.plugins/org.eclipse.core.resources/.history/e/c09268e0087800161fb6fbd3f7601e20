@@ -1,6 +1,6 @@
 package h2Sets_and_Maps;
 
-public class Problem2SetsOfElements {
+public class Problem12LegendaryFarming {
 
     public static void main(String[] args) {
         // TODO Auto-generated method stub
