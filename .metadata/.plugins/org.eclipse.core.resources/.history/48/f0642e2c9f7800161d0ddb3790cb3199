@@ -32,19 +32,15 @@ public class Problem12LegendaryFarming {
                     keyMaterials.put(material,quantity);
                     if (quantity >= 250) {
                         keyMaterials.put(material, quantity - 250);
-                        result=material;   
-                        break;
+                        result=material;
+                       
                     }
                 } else {
-                    if (junk.containsKey(material)) {
-                        quantity+=junk.get(material);
-                        junk.put(material, quantity);
-                    }
                     junk.put(material, quantity);
                 }
+
             }
         }
-        printResult(result);
         for (Map.Entry<String, Integer> entry : keyMaterials.entrySet()) {
             System.out.println(entry.getKey() + ": " + entry.getValue());
         }

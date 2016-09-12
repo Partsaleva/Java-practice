@@ -33,7 +33,7 @@ public class Problem11LogsAggregator {
             for (Entry<String, Integer> ent : m.entrySet()){
                 time+=ent.getValue();
             }
-            System.out.print(entry.getKey()+": "+time);
+            System.out.println(entry.getKey()+": "+time);
             System.out.print("[");
             for (Entry<String, Integer> ent : m.entrySet()){
                 System.out.print(ent.getKey() + " ");

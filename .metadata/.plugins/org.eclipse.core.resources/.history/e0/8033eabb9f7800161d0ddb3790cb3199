@@ -32,8 +32,7 @@ public class Problem12LegendaryFarming {
                     keyMaterials.put(material,quantity);
                     if (quantity >= 250) {
                         keyMaterials.put(material, quantity - 250);
-                        result=material;   
-                        break;
+                        result=material;                       
                     }
                 } else {
                     if (junk.containsKey(material)) {
@@ -42,6 +41,7 @@ public class Problem12LegendaryFarming {
                     }
                     junk.put(material, quantity);
                 }
+
             }
         }
         printResult(result);

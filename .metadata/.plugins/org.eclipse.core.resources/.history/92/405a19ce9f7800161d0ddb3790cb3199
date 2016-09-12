@@ -42,6 +42,7 @@ public class Problem12LegendaryFarming {
                     }
                     junk.put(material, quantity);
                 }
+
             }
         }
         printResult(result);

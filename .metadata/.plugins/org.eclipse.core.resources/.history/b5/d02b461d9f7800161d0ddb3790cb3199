@@ -15,7 +15,6 @@ public class Problem12LegendaryFarming {
         keyMaterials.put("motes", 0);
         Map<String, Integer> junk = new TreeMap<>();
         String[] input = null;
-        String result=null;
         // Shadowmourne – requires 250 Shards;
         // Valanyr – requires 250 Fragments;
         // Dragonwrath – requires 250 Motes;
@@ -29,22 +28,21 @@ public class Problem12LegendaryFarming {
                 String material = input[i + 1].toLowerCase();
                 if (keyMaterials.containsKey(material)) {
                     quantity += keyMaterials.get(material);
-                    keyMaterials.put(material,quantity);
                     if (quantity >= 250) {
                         keyMaterials.put(material, quantity - 250);
-                        result=material;   
-                        break;
+                        if (material.equals("shards"))
+                            System.out.println("Shadowmourne obtained!");
+                        if (material.equals("fragments"))
+                            System.out.println("Valanyr obtained!");
+                        if (material.equals("motes"))
+                            System.out.println("Dragonwrath obtained!");
                     }
                 } else {
-                    if (junk.containsKey(material)) {
-                        quantity+=junk.get(material);
-                        junk.put(material, quantity);
-                    }
                     junk.put(material, quantity);
                 }
+
             }
         }
-        printResult(result);
         for (Map.Entry<String, Integer> entry : keyMaterials.entrySet()) {
             System.out.println(entry.getKey() + ": " + entry.getValue());
         }
@@ -54,12 +52,4 @@ public class Problem12LegendaryFarming {
         scan.close();
     }
 
-    public static void printResult(String result){
-        if (result.equals("shards"))
-            System.out.println("Shadowmourne obtained!");
-        if (result.equals("fragments"))
-            System.out.println("Valanyr obtained!");
-        if (result.equals("motes"))
-            System.out.println("Dragonwrath obtained!");
-    }
 }
