@@ -1,0 +1,27 @@
+package h2Sets_and_Maps;
+
+public class Problem14DragonArmy {
+
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+
+    }
+
+    private static class Dracon{
+        private String name;
+        private int demage=45;
+        private int health=250;
+        private int armor=10;
+        public Dracon(String name, int demage, int health, int armor) {
+            this.name = name;
+            this.demage = demage;
+            this.health = health;
+            this.armor = armor;
+        }
+        @Override
+        public String toString() {
+            return "-" + name + "-> demage: " + demage + ", health: " + health + ", armor: " + armor;
+        }
+        
+    }
+}
