@@ -1,10 +1,8 @@
 package h2Sets_and_Maps;
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
-import java.util.concurrent.CopyOnWriteArrayList;
 
 public class Problem14DragonArmy {
 
@@ -12,37 +10,21 @@ public class Problem14DragonArmy {
         Scanner scan=new Scanner(System.in);
         Scanner in=new Scanner(System.in);
         int lines=in.nextInt();
-        Map<TypeOfDracon,List<Dracon>> map=new HashMap<>();
+        Map<TypeOfDracon,Dracon> map=new HashMap<>();
         String[] input=null;
         for (int i = 0; i < lines; i++) {
             input=scan.nextLine().split(" ");
             TypeOfDracon type=new TypeOfDracon(input[0]);
             Dracon dracon=new Dracon(input[1], Integer.parseInt(input[2]), 
                     Integer.parseInt(input[3]), Integer.parseInt(input[4]));
-            List<Dracon> dracons=new CopyOnWriteArrayList<>();
             if (map.containsKey(type)) {
-                type.setDemage(type.demage+ Integer.parseInt(input[2]));
-                type.setHealth(type.health+Integer.parseInt(input[3]));
-                type.setArmor(type.armor +  Integer.parseInt(input[4]));
-                if (dracons.contains(dracon)) {
-                    dracons.remove(dracon);
-                    dracons.add(dracon);
-                } else {
-                    dracons.add(dracon);
-                }
-            } else{
-                map.put(type, dracons);  
-            }         
+               // type.setDemage(type.getDemage+ Integer.parseInt(input[2]));
+              //  type.setHealth(type.getHealth()+Integer.parseInt(input[3]));
+               // type.setArmor(type.getArmor() +  Integer.parseInt(input[4]));
+            } 
+            map.put(type, dracon);           
         }
        
-        //TODO type
-        for (Map.Entry<TypeOfDracon, List<Dracon>> entry : map.entrySet()) {
-            List<Dracon> dracons=entry.getValue();
-            System.out.println(entry.getKey().toString());
-            for (Dracon dracon : dracons) {
-                System.out.println(dracon.toString());
-            }
-        }
         scan.close();
         in.close();
 
@@ -56,19 +38,7 @@ public class Problem14DragonArmy {
         public TypeOfDracon(String type) {
             this.type = type;
         }
-
-        public void setDemage(int demage) {
-            this.demage = demage;
-        }
-
-        public void setHealth(int health) {
-            this.health = health;
-        }
-
-        public void setArmor(int armor) {
-            this.armor = armor;
-        }
-
+        //TODO typeOfDracon to contain list of dracons
         @Override
         public int hashCode() {
             final int prime = 31;

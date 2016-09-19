@@ -35,12 +35,11 @@ public class Problem14DragonArmy {
             }         
         }
        
-        //TODO type
         for (Map.Entry<TypeOfDracon, List<Dracon>> entry : map.entrySet()) {
             List<Dracon> dracons=entry.getValue();
-            System.out.println(entry.getKey().toString());
+            System.out.println(entry.getKey());
             for (Dracon dracon : dracons) {
-                System.out.println(dracon.toString());
+                System.out.println(dracon);
             }
         }
         scan.close();
