@@ -21,7 +21,8 @@ public class Problem14DragonArmy {
                     Integer.parseInt(input[4]));
             List<Dracon> dracons = new CopyOnWriteArrayList<>();
             if (map.containsKey(type)) {
-                type.setDemage(type.getDemage() + Integer.parseInt(input[2]));
+                int demage=type.getDemage()+ Integer.parseInt(input[2]);
+                type.setDemage(demage );
                 type.setHealth(type.getHealth() + Integer.parseInt(input[3]));
                 type.setArmor(type.getArmor() + Integer.parseInt(input[4]));
                 dracons=map.get(type);
@@ -56,9 +57,9 @@ public class Problem14DragonArmy {
 
     private static class TypeOfDracon {
         private String type;
-        private int demage = 0;
-        private int health = 0;
-        private int armor = 0;
+        private int demage ;
+        private int health ;
+        private int armor;
 
         public TypeOfDracon(String type) {
             this.type = type;

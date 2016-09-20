@@ -31,12 +31,7 @@ public class Problem14DragonArmy {
                 } else {
                     dracons.add(dracon);
                 }
-            } else{
-                type.setDemage(Integer.parseInt(input[2]));
-                type.setHealth(Integer.parseInt(input[3]));
-                type.setArmor(Integer.parseInt(input[4]));
-                dracons.add(dracon);
-            }
+            } 
             map.put(type, dracons);
             
         }

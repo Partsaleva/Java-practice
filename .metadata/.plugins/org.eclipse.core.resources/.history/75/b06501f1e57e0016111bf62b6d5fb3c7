@@ -21,9 +21,9 @@ public class Problem14DragonArmy {
                     Integer.parseInt(input[4]));
             List<Dracon> dracons = new CopyOnWriteArrayList<>();
             if (map.containsKey(type)) {
-                type.setDemage(type.getDemage() + Integer.parseInt(input[2]));
-                type.setHealth(type.getHealth() + Integer.parseInt(input[3]));
-                type.setArmor(type.getArmor() + Integer.parseInt(input[4]));
+                type.setDemage(type.demage + Integer.parseInt(input[2]));
+                type.setHealth(type.health + Integer.parseInt(input[3]));
+                type.setArmor(type.armor + Integer.parseInt(input[4]));
                 dracons=map.get(type);
                 if (dracons.contains(dracon)) {
                     dracons.remove(dracon);
@@ -31,12 +31,7 @@ public class Problem14DragonArmy {
                 } else {
                     dracons.add(dracon);
                 }
-            } else{
-                type.setDemage(Integer.parseInt(input[2]));
-                type.setHealth(Integer.parseInt(input[3]));
-                type.setArmor(Integer.parseInt(input[4]));
-                dracons.add(dracon);
-            }
+            } 
             map.put(type, dracons);
             
         }

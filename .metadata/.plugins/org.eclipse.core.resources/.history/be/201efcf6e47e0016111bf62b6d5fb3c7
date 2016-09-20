@@ -21,24 +21,18 @@ public class Problem14DragonArmy {
                     Integer.parseInt(input[4]));
             List<Dracon> dracons = new CopyOnWriteArrayList<>();
             if (map.containsKey(type)) {
-                type.setDemage(type.getDemage() + Integer.parseInt(input[2]));
-                type.setHealth(type.getHealth() + Integer.parseInt(input[3]));
-                type.setArmor(type.getArmor() + Integer.parseInt(input[4]));
-                dracons=map.get(type);
+                type.setDemage(type.demage + Integer.parseInt(input[2]));
+                type.setHealth(type.health + Integer.parseInt(input[3]));
+                type.setArmor(type.armor + Integer.parseInt(input[4]));
                 if (dracons.contains(dracon)) {
                     dracons.remove(dracon);
                     dracons.add(dracon);
                 } else {
                     dracons.add(dracon);
                 }
-            } else{
-                type.setDemage(Integer.parseInt(input[2]));
-                type.setHealth(Integer.parseInt(input[3]));
-                type.setArmor(Integer.parseInt(input[4]));
-                dracons.add(dracon);
+            } else {
+                map.put(type, dracons);
             }
-            map.put(type, dracons);
-            
         }
 
         for (Map.Entry<TypeOfDracon, List<Dracon>> entry : map.entrySet()) {
@@ -67,24 +61,12 @@ public class Problem14DragonArmy {
             setArmor(armor);
         }
 
-        public int getDemage() {
-            return demage;
-        }
-
         public void setDemage(int demage) {
             this.demage = demage;
         }
 
-        public int getHealth() {
-            return health;
-        }
-
         public void setHealth(int health) {
             this.health = health;
-        }
-
-        public int getArmor() {
-            return armor;
         }
 
         public void setArmor(int armor) {
