@@ -1,6 +1,6 @@
 package h2Sets_and_Maps;
 
-public class Problem13SrubskoUnleashed {
+public class Problem15RubikMatrix {
 
     public static void main(String[] args) {
         // TODO Auto-generated method stub
