@@ -11,7 +11,7 @@ public class Problem14DragonArmy {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        Map<String, double[]> dragonTypes=new HashMap<>();
+        Map<String, int[]> dragonTypes=new HashMap<>();
         Map<String, TreeMap<String, int[]>> dragons=new LinkedHashMap<>();
         int defaultDemage=45;
         int defaultHealth=250;
@@ -29,14 +29,7 @@ public class Problem14DragonArmy {
             
             if (!dragons.containsKey(type)) {
                 dragons.put(type, new TreeMap<>());
-                dragonTypes.put(type, new double[3]);
-            }
-            if (dragons.get(type).containsKey(dragon)) {
-                int[] values=dragons.get(type).get(dragon);
-                dragonTypes.get(type)[0]-=values[0];
-                dragonTypes.get(type)[1]-=values[1];
-                dragonTypes.get(type)[2]-=values[2];
-                
+                dragonTypes.put(type, new int[3]);
             }
             if (!dragons.get(type).containsKey(dragon)) {
                 dragons.get(type).put(dragon, new int[3]);
@@ -44,22 +37,14 @@ public class Problem14DragonArmy {
             dragons.get(type).get(dragon)[0]=demage;
             dragons.get(type).get(dragon)[1]=health;
             dragons.get(type).get(dragon)[2]=armor;
-            
-            dragonTypes.get(type)[0]+=demage;
-            dragonTypes.get(type)[1]+=health;
-            dragonTypes.get(type)[2]+=armor;
-            
         }
-        for (Map.Entry<String, TreeMap<String, int[]>> type : dragons.entrySet()) {
-            System.out.printf("%s::(%.2f/%.2f/%.2f)%n", type.getKey(), 
-                    dragonTypes.get(type.getKey())[0]/type.getValue().size(),
-                    dragonTypes.get(type.getKey())[1]/type.getValue().size(),
-                    dragonTypes.get(type.getKey())[2]/type.getValue().size());
-            for (Map.Entry<String, int[]> dragon : type.getValue().entrySet()) {
-                System.out.printf("-%s -> damage: %d, health: %d, armor:%d%n", dragon.getKey(),
-                        dragon.getValue()[0], dragon.getValue()[1], dragon.getValue()[2]);
-            }
-        }              
+            
+        
+
+     
         scan.close();
-    }   
+
+    }
+
+   
 }

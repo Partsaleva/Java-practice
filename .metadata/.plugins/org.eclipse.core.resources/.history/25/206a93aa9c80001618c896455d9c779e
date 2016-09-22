@@ -1,0 +1,33 @@
+package h2Sets_and_Maps;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Scanner;
+
+public class Problem14DragonArmy {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int defaultDemage=45;
+        int defaultHealth=250;
+        int defaultArmor=25;
+       
+        String[] input=null;
+        int lines = Integer.parseInt(scan.nextLine());
+        for (int i = 0; i < lines; i++) {
+            input=scan.nextLine().split("\\s+");
+            String type=input[0];
+            String dragon=input[1];
+            Integer demage=input[2].equals("null") : defaultDemage
+        }
+            
+        
+
+     
+        scan.close();
+
+    }
+
+   
+}
