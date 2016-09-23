@@ -1,0 +1,23 @@
+package h2Sets_and_Maps;
+
+import java.util.Scanner;
+
+public class Problem15RubikMatrix {
+
+    public static void main(String[] args) {
+       Scanner scan=new Scanner(System.in);
+       String[] sizeOfMatrix=scan.nextLine().split("\\s+");
+       int row=Integer.parseInt(sizeOfMatrix[0]);
+       int col=Integer.parseInt(sizeOfMatrix[1]);
+       int numberOfCommands=scan.nextInt();
+       String[] command = null;
+       for (int i = 0; i < numberOfCommands; i++) {
+           command=scan.nextLine().split("\\s+");
+       }
+       
+       
+      scan.close();
+
+    }
+
+}
