@@ -1,0 +1,16 @@
+package h3_files_and_directories;
+
+import java.io.File;
+
+public class Problem3WordsCount {
+
+    public static void main(String[] args) {
+        File inputFile = new File("/home/partsaleva/Desktop/SoftUni homeworks/"
+                + "03. Java-Advanced-Files-and-Directories-Exercises/04_WordCount/text1.txt");
+        File outputFile = new File("/home/partsaleva/Desktop/SoftUni homeworks/"
+                + "03. Java-Advanced-Files-and-Directories-Exercises/04_WordCount/wordCount1Output.txt");
+        File words=new File("/home/partsaleva/Desktop/SoftUni homeworks/"
+                + "03. Java-Advanced-Files-and-Directories-Exercises/04_WordCount/words1.txt");
+    }
+
+}
