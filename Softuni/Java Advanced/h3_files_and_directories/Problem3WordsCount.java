@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
 
 public class Problem3WordsCount {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         File inputFile = new File("/home/partsaleva/Desktop/SoftUni homeworks/"
                 + "03. Java-Advanced-Files-and-Directories-Exercises/04_WordCount/text1.txt");
         File words=new File("/home/partsaleva/Desktop/SoftUni homeworks/"
@@ -41,7 +41,10 @@ public class Problem3WordsCount {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
+        }finally{
+            reader.close();
         }
+        
     }
 
     private static Map<String, Integer> sortMapByValue(Map<String, Integer> map) {

@@ -1,0 +1,10 @@
+package h3_files_and_directories;
+
+public class Problem4MergingTwoFiles {
+
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+
+    }
+
+}
