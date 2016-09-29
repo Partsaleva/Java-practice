@@ -1,0 +1,13 @@
+package h3_files_and_directories;
+
+import java.io.File;
+
+public class Problem7ReadFromSpecifiedLine {
+
+    public static void main(String[] args) {
+        File file= new File("/home/partsaleva/Desktop/SoftUni homeworks/"
+                + "03. Java-Advanced-Files-and-Directories-Exercises/File2.txt");
+
+    }
+
+}

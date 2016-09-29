@@ -1,6 +1,6 @@
-package h2Sets_and_Maps;
+package h3_files_and_directories;
 
-public class Problem15RubikMatrix {
+public class Problem7ReadFromSpecifiedLine {
 
     public static void main(String[] args) {
         // TODO Auto-generated method stub
