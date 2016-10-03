@@ -1,0 +1,21 @@
+package h4_Manual_String_Processing_Exercises;
+
+public class Problem4ConvertFromBase10ToBaseN {
+
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+
+    }
+
+    public static String convert(int base, int number){
+        StringBuilder result=new StringBuilder();
+        int remainder=0;
+        while (number!=0) {
+            remainder=number%base;
+            number/=remainder;
+            result.append(remainder);
+            remainder=0;
+        }
+        return result.toString();
+    }
+}

@@ -1,6 +1,6 @@
-package h3_files_and_directories;
+package h4_Manual_String_Processing_Exercises;
 
-public class Problem2LineNumbers {
+public class Problem4ConvertFromBase10ToBaseN {
 
     public static void main(String[] args) {
         // TODO Auto-generated method stub
