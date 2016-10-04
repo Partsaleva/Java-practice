@@ -1,6 +1,6 @@
-package h3_files_and_directories;
+package h4_Manual_String_Processing_Exercises;
 
-public class Problem4MergingTwoFiles {
+public class Problem5ConvertFromBaseNToBase10 {
 
     public static void main(String[] args) {
         // TODO Auto-generated method stub
