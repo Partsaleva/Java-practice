@@ -1,0 +1,33 @@
+package h4_Manual_String_Processing_Exercises;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class Problem8TextFilter {
+
+    public static void main(String[] args) {
+        String testWord="Test";
+        String result="";
+        for (int i = 0; i < testWord.length(); i++) {
+            testWord+=testWord.replace(testWord.charAt(i), '*');
+        }
+       // testWord=testWord.replaceAll(testWord, result);
+        System.out.println(testWord);
+//        List<String> filter = new ArrayList<>(Arrays.asList("Linux", "Windows"));
+//        String input = "It is not Linux, it is GNU/Linux. Linux is merely the kernel, "
+//                + "while GNU adds the functionality. Therefore we owe it to them by "
+//                + "calling the OS GNU/Linux! Sincerely, a Windows client";
+//        for (String f : filter) {
+//            int index = input.indexOf(f);
+//            while (index != -1) {
+//                index = input.indexOf(f, index + 1);
+//                for (int i = input.charAt(index); i < input.charAt(index)+f.length()-1; i++) {
+//                    input.replace(input.charAt(i), '*');
+//                }
+//            }
+//        }
+//        System.out.println(input);
+    }
+
+}
