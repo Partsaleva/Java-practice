@@ -1,0 +1,10 @@
+package h4_Manual_String_Processing_Exercises;
+
+public class Problem10UnicodeCharacters {
+
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+
+    }
+
+}
