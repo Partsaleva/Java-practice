@@ -1,6 +1,6 @@
 package h4_Manual_String_Processing_Exercises;
 
-public class Problem3FormattingNumbers {
+public class Problem11Palindromes {
 
     public static void main(String[] args) {
         // TODO Auto-generated method stub
