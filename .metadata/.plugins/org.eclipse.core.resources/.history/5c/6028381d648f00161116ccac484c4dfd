@@ -1,0 +1,12 @@
+package h4_Manual_String_Processing_Exercises;
+
+public class Problem12CharacterMultiplier {
+
+    public static void main(String[] args) {
+        String str1="a";
+        String str2="aaaaa";
+        System.out.println(str1.charAt(0));
+
+    }
+
+}
