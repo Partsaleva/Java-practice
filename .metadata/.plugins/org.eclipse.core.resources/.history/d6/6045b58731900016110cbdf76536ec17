@@ -1,0 +1,27 @@
+package h4_Manual_String_Processing_Exercises;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Problem13MagicExchangeableWords {
+
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+
+    }
+    public static boolean areExchangeable(String str1, String str2){
+        Map<Character,Character> map=new HashMap<>();
+        map.put(str1.charAt(0), str2.charAt(0));
+        String bigger = str1.length() > str2.length() ? str1 : str2;
+        String smaller = str2.length() < str2.length() ? str2 : str1;
+        for (int i = 1; i < str1.length(); i++) {
+            if (!map.containsKey(str1.charAt(i))) {
+                map.put(str1.charAt(i), str2.charAt(i));
+            }else {
+                if (map.get(str1.charAt(i))!=str2.charAt(i))
+                    return false;
+            }
+        }
+        return false;       
+    }
+}
