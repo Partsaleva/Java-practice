@@ -1,0 +1,20 @@
+package h4_Manual_String_Processing_Exercises;
+
+public class Problem14LettersChangeNumbers {
+
+    public static void main(String[] args) {
+        String alphabet="abcdefghijklmnopqrstuvwxyz";
+        String text="A12b s17G";
+        String firstHalf=text.split("\\s+")[0];
+        String secondHalf=text.split("\\s+")[1];
+       // First you start with the letter before the number. 
+        //If it's Uppercase you divide the number by the letter's position in the alphabet. 
+        //If it's lowercase you multiply the number with the letter's position.
+        //Then you move to the letter after the number. If it's Uppercase you subtract 
+        //its position from the resulted number. If it's lowercase you add its position 
+        //to the resulted number.
+    }
+
+    
+    
+}

@@ -1,6 +1,6 @@
 package h4_Manual_String_Processing_Exercises;
 
-public class Problem6CountSubstringOccurrences {
+public class Problem14LettersChangeNumbers {
 
     public static void main(String[] args) {
         // TODO Auto-generated method stub
