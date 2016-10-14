@@ -21,7 +21,7 @@ public class Problem14LettersChangeNumbers {
                 last=Character.toLowerCase(last);
                 sum+=number-(alphabet.indexOf(last)+1);// -
             }else{
-                sum+=number+(alphabet.indexOf(last)+1);//+
+                sum+=sum-(alphabet.indexOf(last)+1);//+
             }
         }
         System.out.println(sum);

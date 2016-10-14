@@ -19,7 +19,7 @@ public class Problem14LettersChangeNumbers {
             }
             if ((int)last<97) {
                 last=Character.toLowerCase(last);
-                sum+=number-(alphabet.indexOf(last)+1);// -
+                sum-=number-(alphabet.indexOf(last)+1);// -
             }else{
                 sum+=number+(alphabet.indexOf(last)+1);//+
             }
