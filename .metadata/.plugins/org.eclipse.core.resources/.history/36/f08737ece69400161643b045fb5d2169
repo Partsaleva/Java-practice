@@ -1,5 +1,6 @@
+package h4_Manual_String_Processing_Exercises;
 
-public class JProf {
+public class Problem15MelrahShake {
 
     public static void main(String[] args) {
         // TODO Auto-generated method stub
