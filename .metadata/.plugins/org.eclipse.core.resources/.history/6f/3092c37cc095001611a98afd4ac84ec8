@@ -13,10 +13,9 @@ public class Problem15MelrahShake {
     }
 
     private static void shakeIt(String text, String pattern) {
-        boolean canShake=true;
+        boolean found_first=false, found_second=false, canShake=true;
         while (canShake) {
             canShake=false;
-            boolean found_first=false, found_second=false;
             String revPattern=new StringBuilder(pattern).reverse().toString();
             int indexOfFirst, indexOfLast;
             for (int i = 0; i < text.length()/2; i++) {
@@ -46,7 +45,6 @@ public class Problem15MelrahShake {
        
         
         System.out.println(text);
-        System.out.println();
     }
 
 }

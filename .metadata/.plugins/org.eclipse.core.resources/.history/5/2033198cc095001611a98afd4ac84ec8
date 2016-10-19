@@ -46,7 +46,6 @@ public class Problem15MelrahShake {
        
         
         System.out.println(text);
-        System.out.println();
     }
 
 }
