@@ -27,11 +27,10 @@ public class Problem16ExtractHyperlinks {
 
     public static void main(String[] args) {
         Scanner scan=new Scanner(System.in);
-        String line=null;
+        String line=scan.nextLine();
         Pattern p=Pattern.compile("(<a\\s*.+href\\s*=\\s*((\"|')*))(.*)((\"|')*)(.*)(<\\/a>)"); //TODO
         Matcher m=null;
         while (line!="END") {
-            line=scan.nextLine();
             m=p.matcher(line);
             if(m.find())
                 System.out.println(m.group());

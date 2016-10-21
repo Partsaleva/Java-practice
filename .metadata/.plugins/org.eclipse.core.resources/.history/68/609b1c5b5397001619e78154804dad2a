@@ -34,7 +34,7 @@ public class Problem16ExtractHyperlinks {
             line=scan.nextLine();
             m=p.matcher(line);
             if(m.find())
-                System.out.println(m.group());
+                System.out.println(m.group(2));
         }
         scan.close();
     }
