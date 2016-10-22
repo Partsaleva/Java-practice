@@ -1,0 +1,25 @@
+package h5_Regular_Expressions;
+
+import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class Problem1MatchFullName {
+
+    public static void main(String[] args) {
+        Scanner scan=new Scanner(System.in);
+        String line=null;
+        Pattern p=Pattern.compile("[A-Z]\\w+");
+        Matcher m=null;
+        while (line!="end") {
+            line=scan.nextLine();
+            m=p.matcher(line);
+            if(m.find())
+                System.out.println(m.group());
+        }
+        scan.close();
+        
+
+    }
+
+}
