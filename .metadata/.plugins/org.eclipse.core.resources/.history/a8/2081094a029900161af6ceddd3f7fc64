@@ -9,7 +9,7 @@ public class Problem1MatchFullName {
     public static void main(String[] args) {
         Scanner scan=new Scanner(System.in);
         String line=null;
-        Pattern p=Pattern.compile("([A-Z]{1}[a-z]+)[ ]([A-Z]{1}[a-z]+)*$");
+        Pattern p=Pattern.compile("^([A-Z][a-z]+((\\s)))+[A-Z][a-z]+$");
         boolean NotEnd=true;
         Matcher m=null;
         while (NotEnd) {
