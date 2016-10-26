@@ -1,6 +1,6 @@
-package h4_Manual_String_Processing_Exercises;
+package h5_Regular_Expressions;
 
-public class Problem15MelrahShake {
+public class Problem4ReplaceTag {
 
     public static void main(String[] args) {
         // TODO Auto-generated method stub
