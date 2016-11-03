@@ -1,9 +1,5 @@
 package h5_Regular_Expressions;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -23,15 +19,11 @@ public class Problem9QueryMess {
         while (NotEnd) {
             line=scan.nextLine();
             if(line.equals("END"))
-                NotEnd=false;  
-            else
+                NotEnd=false;            
             result+=line=line.replaceAll("%20", "").replace("+", "")+"\n";
         }
-        List<String> values=new ArrayList();
-        Map<String, List<String>> map=new HashMap<>();
         scan.close();
         System.out.println(result);
     }
 
-    
 }

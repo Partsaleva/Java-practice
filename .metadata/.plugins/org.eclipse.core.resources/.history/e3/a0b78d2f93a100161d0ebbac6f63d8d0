@@ -27,7 +27,6 @@ public class Problem9QueryMess {
             else
             result+=line=line.replaceAll("%20", "").replace("+", "")+"\n";
         }
-        List<String> values=new ArrayList();
         Map<String, List<String>> map=new HashMap<>();
         scan.close();
         System.out.println(result);

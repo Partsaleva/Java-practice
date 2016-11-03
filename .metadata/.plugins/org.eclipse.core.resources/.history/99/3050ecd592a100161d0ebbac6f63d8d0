@@ -23,11 +23,9 @@ public class Problem9QueryMess {
         while (NotEnd) {
             line=scan.nextLine();
             if(line.equals("END"))
-                NotEnd=false;  
-            else
+                NotEnd=false;            
             result+=line=line.replaceAll("%20", "").replace("+", "")+"\n";
         }
-        List<String> values=new ArrayList();
         Map<String, List<String>> map=new HashMap<>();
         scan.close();
         System.out.println(result);
