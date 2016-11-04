@@ -5,6 +5,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Problem9QueryMess {
 
@@ -15,8 +17,6 @@ public class Problem9QueryMess {
                 + "https://softuni.bg/trainings.asp?trainer=nakov&course=oop&course=php\n"
                 + "END";
         Scanner scan=new Scanner(text);
-        List<String> values=null;
-        Map<String, List<String>> map=new HashMap<>();
         String line=null;
         boolean NotEnd=true;
         String result="";
@@ -24,23 +24,14 @@ public class Problem9QueryMess {
             line=scan.nextLine();
             if(line.equals("END"))
                 NotEnd=false;  
-            else{
-                line=line.replaceAll("%20", "").replace("+", "");
-                result+=line;
-                for (String pair : line.split("&")) {
-                    String[] str=pair.split("=");
-                    if (!map.containsKey(str[0])) {
-                        values=new ArrayList<String>();
-                        values.add(str[1]);
-                    }else {
-                        values=map.get(str[0]);
-                        values.add(str[1]);
-                    }
-                    map.put(str[0], values);
-                }
-            }
-        }       
+            else
+            result+=line=line.replaceAll("%20", "").replace("+", "")+"\n";
+        }
+        List<String> values=new ArrayList();
+        Map<String, List<String>> map=new HashMap<>();
         scan.close();
-        System.out.println(map);
+        System.out.println(result);
     }
+
+    
 }

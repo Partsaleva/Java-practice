@@ -5,6 +5,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Problem9QueryMess {
 
@@ -39,8 +41,11 @@ public class Problem9QueryMess {
                     map.put(str[0], values);
                 }
             }
-        }       
+        }
+        
         scan.close();
         System.out.println(map);
     }
+
+    
 }

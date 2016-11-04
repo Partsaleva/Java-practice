@@ -5,6 +5,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Problem9QueryMess {
 
@@ -25,7 +27,7 @@ public class Problem9QueryMess {
             if(line.equals("END"))
                 NotEnd=false;  
             else{
-                line=line.replaceAll("%20", "").replace("+", "");
+                line=line.replaceAll("%20", "").replace("+", "")+"\n";
                 result+=line;
                 for (String pair : line.split("&")) {
                     String[] str=pair.split("=");
@@ -39,8 +41,11 @@ public class Problem9QueryMess {
                     map.put(str[0], values);
                 }
             }
-        }       
+        }
+        
         scan.close();
         System.out.println(map);
     }
+
+    
 }
