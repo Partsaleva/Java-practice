@@ -32,12 +32,15 @@ public class Problem10UseYourChainsBuddy {
         StringBuilder result=new StringBuilder();
         for (int i = 0; i < textForDecription.length(); i++) {
             int ch= textForDecription.charAt(i);
-            if (ch==32) 
-                result.append(" ");
-            if (ch>=97 && ch<111) 
-                result.append((char) (ch+13));
-            if(ch>110 && ch<123) 
-                result.append((char) (ch-13));                            
+            if (ch!=48) {
+                if (ch>=97) {
+                    result.append((char) (ch+14));
+                }
+                else {
+                    result.append((char) (ch-14));
+                }
+                
+            }
         }
         System.out.println(result);
     }
