@@ -28,7 +28,7 @@ public class Problem10UseYourChainsBuddy {
         while (m.find()) {
             textForDecription+=m.group(1);
         }
-        textForDecription=textForDecription.replace("\\W|[A-Z]", "");
+        textForDecription=textForDecription.replace("\\W|[A-Z]", " ");
         StringBuilder result=new StringBuilder();
         for (int i = 0; i < textForDecription.length(); i++) {
             int ch= textForDecription.charAt(i);
