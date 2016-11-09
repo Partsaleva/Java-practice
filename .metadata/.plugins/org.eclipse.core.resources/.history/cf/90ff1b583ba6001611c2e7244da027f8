@@ -1,0 +1,43 @@
+package h5_Regular_Expressions;
+
+import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class Problem11SemanticHTML {
+
+    public static void main(String[] args) {
+        String html1 = "<div style=\"color:red\" id=\"header\">\n"
+                    + "</div> <!-- header -->\n" 
+                    + "END";
+        String html2 = "<div align=\"left\" id=\"nav\" style=\"color:blue\">\n" 
+                    +  "<ul class=\"header\">\n"
+                    + "<li id=\"main\">\n" 
+                    + " Hi, I have id=\"main\".\n" 
+                    + "</li>" + " </ul>\n"
+                    + "</div> <!-- nav -->\n" 
+                    + "END";
+
+        
+    }
+    public static void createSemanticHtml(String html){
+        Scanner scan=new Scanner(html);
+        String line=null;
+        Pattern p=Pattern.compile("id=\"(\\w+)\"");
+        boolean NotEnd=true;
+        Matcher m=null;
+        StringBuilder result=new StringBuilder();
+        while (NotEnd) {
+            line=scan.nextLine();
+            if(line.equals("END"))
+                NotEnd=false;            
+            m=p.matcher(line);
+          
+                line=line.replace("div", m.group(1));
+            result.append(line);
+            result.append("\n");
+        }
+        System.out.println(result);
+        scan.close(); 
+    }
+}
