@@ -46,7 +46,7 @@ public class Problem11SemanticHTML {
                 line=line.replace(div, tag);
                 result.append(line).append("\n");
             }else
-                result.append(line).append("\n");
+            result.append(line).append("\n");
         }
         System.out.println(result);
         scan.close(); 

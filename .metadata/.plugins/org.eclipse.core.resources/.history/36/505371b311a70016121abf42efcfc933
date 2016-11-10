@@ -25,28 +25,29 @@ public class Problem11SemanticHTML {
         Scanner scan=new Scanner(html);
         String line=null;
         Pattern newTag=Pattern.compile("(id=\"(\\w+)\")");
-        String div="div";
+        Pattern div=Pattern.compile("div");
         boolean NotEnd=true;
-        Matcher m1=null;     
+        Matcher m1=null;
+        Matcher m2=null;
         StringBuilder result=new StringBuilder();
         String tag="";
         while (NotEnd) {
             line=scan.nextLine();
             if(line.equals("END"))
-                NotEnd=false;     
-            
+                NotEnd=false;            
             m1=newTag.matcher(line);
-            if (m1.find() && line.contains(div)) {
+            m2=div.matcher(line);
+            if (m1.find() && m2.find()) {
                 tag=m1.group(2);
-                line=line.replace(div, tag);
+                line=line.replace(m2.group(), tag);
                 line=line.replace(m1.group(1),"");
                 result.append(line).append("\n");
             }
-            else if (line.contains(div)) {
-                line=line.replace(div, tag);
+            else if (m2.find()) {
+                line=line.replace(m2.group(), tag);
                 result.append(line).append("\n");
             }else
-                result.append(line).append("\n");
+            result.append(line).append("\n");
         }
         System.out.println(result);
         scan.close(); 
