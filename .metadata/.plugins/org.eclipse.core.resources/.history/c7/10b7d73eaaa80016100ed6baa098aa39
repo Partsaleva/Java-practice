@@ -1,6 +1,6 @@
-package h5_Regular_Expressions;
+package h6_Java_Advanced_Functional_Programming;
 
-public class Problem9QueryMess {
+public class Problem1ConsumerPrint {
 
     public static void main(String[] args) {
         // TODO Auto-generated method stub
