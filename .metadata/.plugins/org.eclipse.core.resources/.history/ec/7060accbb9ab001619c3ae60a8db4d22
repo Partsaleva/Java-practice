@@ -1,0 +1,25 @@
+package h6_Java_Advanced_Functional_Programming;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.function.BiFunction;
+import java.util.function.BiPredicate;
+import java.util.function.Function;
+
+public class Problem3CustomMinFunction {
+
+    public static void main(String[] args) {
+        List<Integer> list=new ArrayList<>(Arrays.asList(1, 4, 3, 2, 1, 7, 13));
+        BiPredicate<Integer, Integer> smaller = (first, second) -> first < second;
+      //  Function<Boolean, Integer> f= 
+        for (int i = 0; i < list.size()-1; i++) {
+            int min=0;
+           if (smaller.test(i, i+1)) {
+               min=i;
+           }else min=i+1;
+        }
+        System.out.println(min);
+    }
+
+}
