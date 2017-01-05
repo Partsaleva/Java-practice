@@ -1,0 +1,32 @@
+package h6_Java_Advanced_Functional_Programming;
+
+import java.util.Scanner;
+import java.util.function.Predicate;
+
+public class Problem4FindEvensOrOdds {
+
+    public static void main(String[] args) {
+        Integer lowerBound = 1;
+        Integer upperBound = 20;
+        Scanner scan = new Scanner(System.in);
+        String command = scan.nextLine();
+        switch (command) {
+        case "even":
+            for (int i = lowerBound; i <= upperBound; i++) 
+                System.out.println(testNum(i, x -> x % 2 == 0));
+            break;
+        case "odd":
+            for (int i = lowerBound; i <= upperBound; i++) 
+                System.out.println(testNum(i, x -> x % 2 != 0));
+            break;
+        default:
+            break;
+        }
+
+        scan.close();
+    }
+
+    public static Boolean testNum(Integer number, Predicate<Integer> predicate) {
+        return predicate.test(number);
+    }
+}
